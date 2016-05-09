@@ -1,0 +1,81 @@
+<library>
+  <include href="rss.lzx"/>
+  <!-- Dataset bound to blog's RSS feed. -->
+  <dataset name="calendarRssFeed"
+           request="true"
+           src="http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic" >
+    <handler name='onerror'>
+      if (this.src=='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic') {
+        Debug.warn("Couldn't load " + this.src + " Error: "+ this.getErrorString())
+        this.setAttribute('src', 'calendar.php');
+        this.doRequest();
+      }
+      else if (this.src=='calendar.php') {
+        Debug.warn("Couldn't load " + this.src + " Error: "+ this.getErrorString())
+        this.setAttribute('src', 'calendar_rss_sample.xml');
+        this.doRequest();
+      }
+    </handler>
+    <handler name='ontimeout'>
+      Debug.debug("Timeout loading calendar feed")
+    </handler>
+  </dataset>
+  <class name="rssCalendar" extends="rss" datasetName="calendarRssFeed" showDate="true" range="[1-100]">
+    <attribute name="itemPath" type="string" value=":/feed/entry"/>
+    <attribute name="titlePath" type="string" value="title/text()"/>
+    <attribute name="linkPath" type="string" value="content/text()"/>
+    <attribute name="descriptionPath" type="string" value="content/text()"/>
+    <attribute name="datePath" type="string" value="content/text()" />
+
+    <rssPost name="rssPost">
+      <method name="mapLink" args="xml"><![CDATA[
+          link = xml.split('\n<br />')[5]
+          descriptionMatches = new RegExp("Event Description: (.+)").exec(link)
+          if (descriptionMatches == null) {
+            Debug.warn("No link found for xml " + link)
+            return link
+          }
+          else {
+            return descriptionMatches[1]
+          }
+        ]]></method>
+      <!-- post process the title -->
+      <method name="mapTitle" args="title"><![CDATA[
+          return title;
+        ]]></method>
+      <!-- post process the date. This is just to extract it from text. It will be formatted later -->
+      <method name="mapDate" args="xml"><![CDATA[
+          date = xml.split('\n<br />')[0]
+          descriptionMatches = new RegExp("When: (.+)").exec(date)
+          if (descriptionMatches == null) {
+            Debug.warn("No date found for xml " + date)
+            return date
+          }
+          else {
+            return descriptionMatches[1]
+          }
+        ]]></method>
+      <!-- post process the description -->
+      <method name="mapDescription" args="xml"><![CDATA[
+          where = xml.split('\n<br />')[3]
+          descriptionMatches = new RegExp("Where: (.+)").exec(where)
+          if (descriptionMatches == null) {
+            Debug.warn("No link found for xml " + where)
+            return ''
+          }
+          else {
+            return descriptionMatches[1]
+          }
+      ]]></method>
+      <rssText name="rssText"
+               titlePathText="$path{classroot.titlePath}"
+               linkPathText="$path{classroot.linkPath}"
+               datePathText="$path{classroot.datePath}"
+               descriptionPathText="$path{classroot.descriptionPath}"
+               showDate="${classroot.showDate}"
+               fontsize="${classroot.fontsize}"
+              >
+      </rssText>
+    </rssPost>
+  </class>
+</library>

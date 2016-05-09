@@ -1,0 +1,454 @@
+<library>
+  <include href="pageView.lzx"/>
+  <include href="interest.lzx"/>
+  <class name="spot" extends="node">
+    <attribute name="x"/>
+    <attribute name="y"/>
+    <attribute name="radius"/>
+    <method name="intersects" args="spot2"><![CDATA[
+          var buffer=20
+          var distance = this.distanceTo(spot2)-20
+          return distance < this.radius || distance < spot2.radius
+    ]]></method>
+    <method name="intersectVector" args="spot2"><![CDATA[
+          return {x:spot2.x-this.x, y:spot2.y-this.y}
+    ]]></method>
+    <method name="distanceTo" args="spot2"><![CDATA[
+          return Math.sqrt(Math.pow(Math.abs(this.x-spot2.x), 2) + Math.pow(Math.abs(this.y-spot2.y), 2))
+        ]]></method>
+  </class>
+  <class name="interests" width="${parent.width}" height="${parent.height}">
+    <pageView name="grid" width="${parent.width}" height="${parent.height}">
+      <handler name="oninit">
+        placeBoxes(this.subviews)
+        /* onInterestMoved = new lz.Delegate(this, "onInterestMoved" );
+        this.subviews.each(function(interest) {
+          onInterestMoved.register(interest, "moved")
+        }) */
+      </handler>
+      <method name="onInterestMoved" args="movedInterest"><![CDATA[
+        intersectingInterests = this.intersectsWhich(movedInterest)
+        intersectingInterests.each(function(interest) {
+          interest.bump(movedInterest.getSpot().intersectVector(interest.getSpot()), movedInterest.getMovementVector) })
+      ]]></method>
+      <method name="placeBoxes" args="unplacedBoxes">
+       if (unplacedBoxes.length==0) {
+        return this
+       }
+       placeBox(unplacedBoxes.first())
+       return placeBoxes(unplacedBoxes.rest())
+      </method>
+      <method name="placeBox" args="box">
+        spot = this.findOpenSpot(box.getSpot().radius, 10)
+        box.setAttribute('spot', spot)
+      </method>
+      <method name="findOpenSpot" args="radius, tries">
+        if (tries==0) {
+          Debug.debug("Couldn't find spot for box of radius " + radius)
+          return randomSpot(radius)
+        }
+        else {
+          return openSpot(randomSpot(radius)) || findOpenSpot(radius, tries-1)
+        }
+      </method>
+      <method name="randomSpot" args="radius">
+        edgeBuffer=100
+        var xRange=this.width-edgeBuffer*2
+        var yRange=this.height-edgeBuffer*2
+        randoms = [xRange,yRange].map(function(range) { return edgeBuffer+Math.random()*range; });
+        return new lz.spot(canvas, {x:randoms[0], y:randoms[1], radius:radius})
+      </method>
+      <method name="openSpot" args="spot">
+        o=!subviews.some(function(box) {
+          return spot.intersects(box.getSpot())
+        })
+        return o ? spot : null
+      </method>
+      <method name="intersectsWhich" args="interest">
+        return subviews.without(interest).filter(function(box) {
+          return interest.getSpot().intersects(box.getSpot())
+        })
+      </method>
+
+      <interest topic="Felines" id="felines">
+        <detailText name="detailText">
+          I've always had a fascination with wild and domestic cats. My dream is to see a wildcat of any kind in
+        the wild some day. They seem pretty elusive unless you go on safari. The closest I've gotten are ocelot footprints
+        on Barro Colorado in Panamá. I'm sure a wildcat has gotten closer to me unnoticed, especially in the hills of the East Bay.
+        </detailText>
+      </interest>
+      <interest topic="Trains" id="trains">
+        <detailText name="detailText">
+          When I was young, my brother and I liked trains so much that our mother would drive us back and forth along the tracks in
+          the hopes of spotting one. Now that I know my railroads I can safely say that the track in question was out of service.
+          My first train trip was from Oakland to Seattle (or maybe the other way around) and since then I've take ViaRail across
+          Canada, Amtrak across the U.S., a short 35 hour trip from Boston to New Orleans, and I've had three trips to Europe with
+          extensive rail use. Trains are elegant and orderly. They are the most environmentally benign form of motorized transportation
+          imaginable and scale to almost any circumstance. I don't know if I could live in a city without a rail system or in a town
+          with out of train station.
+        </detailText>
+      </interest>
+      <interest topic="Piano" id="piano">
+        <detailText name="detailText">
+          Like so many children, I was introduced to piano at age six and classically trained. I was never especially talented,
+          but I kept at the lessons until I was eighteen. My interests slowly opened up to the world of pop piano music, improv,
+          blues, and playing in ensembles. I played keyboards briefly in a couple bands and recently took a couple years of jazz
+          lessons. My idol in the piano world is unquestionable Ben Folds, who isn't afraid to sing about someone in particular
+          and rock out on the piano while doing it. If I could play like Ben, that's all I would ever do. My other favorite pianist
+          is Victor Borge, who I was lucky enough to see live sometime after his 75th birthday (you'll get the joke if you know
+          his work.) Masterful piano playing combined with comedy and class has no equal.
+        </detailText>
+      </interest>
+      <interest topic="Guitar" id="guitar">
+        <detailText name="detailText">
+          Guitar was my second musical love, unsurprisingly springing up in high school where playing guitar seems like the thing
+          to do. I've taken a bit of formal training in piano, including a bluegrass course. I'm just good enough to be able to
+          play pop songs and sing along. About half the time I'm playing the Barenaked Ladies, who share the spotlight with Ben
+          Folds as my favorite pop musicians. Who would have thought Canadians could be so funny?
+        </detailText>
+      </interest>
+      <interest topic="Singing" id="singing">
+        <detailText name="detailText">
+          The first time I really tried singing a pop song to the guitar, my roommate in the next room started howling like a dog
+          to show his appreciation. My voice has improved since then after many years and a bit of formal training. I'm not a great
+          singer, but I can hold my own, and I've been delighted to be told that I have a singing voice. My next goal is singing
+          is to become a competent harmonist. I love barber shop quartet and a capella.
+        </detailText>
+      </interest>
+      <interest topic="Community" id="community">
+        <detailText name="detailText">
+          I grew up in the suburbs on a big wide road with an abandoned school across the street. We drove to get almost anywhere.
+          I think people should live in villages, either real ones or urban ones, and it should be fairly easy to identify your community.
+          I want to know the people I see in the street, in the café, and at the bar. I want my community to get together for work projects,
+          for parties, and for governing. I've never lived in a strong community, but I hope to be a part of one someday and help make a lot
+          of stronger communities with my professional work.
+        </detailText>
+      </interest>
+      <interest topic="Farming" id="farming">
+        <detailText name="detailText">
+          My father grew up on a farm in Alberta, Canada, and I relish the chance to visit it every summer. Though I never lived there,
+          it will always be my second home. I like agrarian values, work, community, and politics. I'm heavily influenced by the writings
+          of Wendell Berry, who makes a convincing case for the lifestyle. I don't know if I'll every get to farm, but I want a lot
+          more people to do it as a lifestyle. The shift to industrial farming is depressing, but I hope that the revival of localized
+          agriculture can attract many of us back out to the fields--maybe me someday.
+        </detailText>
+      </interest>
+      <interest topic="Meadows" id="meadows">
+        <detailText name="detailText">
+          Meadows are lovely spots that I seek out. I like to walk out in the middle of one at twilight after I pitch my tent
+          and watch for animals. I look to grab a lawn chair and sit in one on a sunny day. I love mountains and tarns, and I
+          always appreciate running into a high altitude meadow after be shrouded in trees for a couple hours.
+        </detailText>
+      </interest>
+      <interest topic="Mountains" id="mountains">
+        <detailText name="detailText">
+          My Eastern European relatives were coal miners, so I think mountains are in my blood. Forget the ocean and the plains,
+          give me something to ascend. The Rockies are my favorite, thanks to Alberta, but I've been dazzled hiking through the
+          Alps, Sierras, and Cascades as well. I've lived in Boston for almost two years now without seeing the Appalacians. That
+          will be quickly corrected this summer.
+        </detailText>
+      </interest>
+      <interest topic="Tarns" id="tarns">
+        <detailText name="detailText">
+          Bill Bryson brought the word to my attention, and gave me a word to describe something I cherish. The most amazing
+          tarn I ever encountered was an emerald blue one surrounded by snow in the middle of the summer in Waterton Lakes
+          National Park in Alberta. Other favorites have appeared in California and Hawaii, if you can call a small lake in
+          Hawaii a tarn. Most of my backpacking trips target a tarn to camp next to, and I'll give it a celebratory swim if it's
+          above 70°F.
+        </detailText>
+      </interest>
+      <interest topic="France" id="france">
+        <detailText name="detailText">
+          L'Hexagone, elle m'intrigue. Childhood trips to Canada meant there was French to read on my cereal box. I developed
+          a bit of a crush on the language when I had the chance to learn it in high school. It wasn't until the age of 24 that
+          I had my first chance to visit Europe. I dreamt about it for days and finally landed in Paris. It was chaotic and
+          my French was all but worthless there. Things improved a bit when we traveled to the south. After several years tackling
+          Spanish in my twenties, I decided that I wanted to be fluent in French and Spanish by the age of 30. I took courses in
+          French at the Alliance Française in Berkeley and San Fracisco and got serious about language acquisition techniques.
+          As with Spanish and German, I made good use of the Foreign Service Institute language courses to hone my skills. I moved to
+          Montréal several years ago to really conquer French, but fate pulled me elsewhere prematurely. I remain fluent only
+          in English, but my French skills are solid, and I love going anywhere Francophone.
+        </detailText>
+      </interest>
+      <interest topic="Germany" id="germany">
+        <detailText name="detailText">
+          I began studying German a couple years ago. It was always the third language I wanted to learn, after French and Spanish,
+          and I wanted to try applying the learning techniques I had previously acquired. I made my first trip to Germany last summer
+          and thoroughly enjoyed the culture and urban form. My comprehension was decent but I hid behind more competent speakers.
+          I continue to study a little German every day and I hope to soon enroll in courses and conversation groups, having exhausted
+          my ability to learn on my own.
+        </detailText>
+      </interest>
+      <interest topic="Spain" id="spain">
+        <detailText name="detailText">
+          I was introduced to the Spanish language via Central America, so it was quite stunning to visit Spain a few years ago for
+          the first time and find myself among Spanish and Catalan in Barcelona. Last summer I got to visit a friend in the Basque
+          Country and was completely charmed by the society and landscape, just like Barcelona. Spain is a marvelous place in which
+          I hope to spend much more time. The Sephardic side of my family is also originally from Spain (pre-Inquisition), so I
+          probably blend in pretty well until they hear my strange hybrid Spanish accent.
+        </detailText>
+      </interest>
+      <interest topic="Ecuador" id="ecuador">
+        <detailText name="detailText">
+          Ecuador is at the top of my list of places to visit (unless someone invites me to visit them somewhere else.) I haven't
+          made it to South America yet but I'm intrigued by Ecuador's mix of beach, mountains, and rain forrest. I'll leave
+          the Galapagos Islands to the tortugas.
+        </detailText>
+      </interest>
+      <interest topic="Panamá" id="panama">
+        <detailText name="detailText">
+          A large part of my mother's extended family lives in Panamá, and my grandmother was born and raised there. I've visited
+          twice and experienced the strange justification of the urban life in a big Latin American city and the beautiful
+          landscape of places like San Blas, Coronado, and Bocas del Toro. The canal may have built the country, but everything
+          else about it is certainly more interesting.
+        </detailText>
+      </interest>
+      <interest topic="Montréal" id="montreal">
+        <detailText name="detailText">
+        It's impossible for me resist the draw of Canada's largest city, where French and Anglo culture collide, flavored by the
+        warm people and vastness of Canada. I tried to live in Montréal back in 2007, but fate drew me away after only a couple
+        months of French immersion courses and telecommuting. I still dream of going back and living a substantial amount of
+        time in the city.
+        </detailText>
+      </interest>
+      <interest topic="Alberta" id="alberta">
+        <detailText name="detailText">
+          My father grew up on a farm in southern Alberta, and I visit for a couple weeks every summer. Alberta is a magical place
+          to me; the beauty of the Rockies combined by the calming of good family and summer idleness is a large part of my identity.
+        </detailText>
+      </interest>
+      <interest topic="Hiking &amp; Backpacking" id="hikingBackpacking">
+        <detailText name="detailText">
+          When I was working my first software job in 1999, my co-workers put together a weekend packpaging trip to King's Canyon
+          in the Sierra Nevadas near Yosemite. It was summer and 85°F, and we ascending 5000 feet with a forest fire sending
+          smoke up below us. Water was non-existent until we finally summitted in the evening and found small pools in the granite
+          basin in which we camped. Despite the pain of that weekend, I was hooked on backpacking after that. Besides camping trips,
+          I love a day hike anywhere with sweeping views and wild berries to waylay me. Since I don't have a car I'm always looking
+          for hikes that are accessible by train. That's a pretty tall order in the U.S.. I'd like to put together a crowd sourced
+          web site about carfree hikes all over the country.
+        </detailText>
+      </interest>
+      <interest topic="Swimming" id="swimming">
+        <detailText name="detailText">
+          I've always had a tenuous relationship with swimming. On a casual level, I love it. When I was eight years old I agreed
+          to join the our swim club's team, and I swam competitively
+        </detailText>
+      </interest>
+      <interest topic="Ice Hockey" id="iceHockey">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Soccer" id="soccer">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Bluegrass" id="bluegrass">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Accordion" id="accordion">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Saskatoons" id="saskatoons">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Pirogis" id="pirogis">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Pecan Pie" id="pecanPie">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Croissants" id="croissants">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Coffee" id="coffee">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Vanilla" id="vanilla">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Wendel Berry" id="wendelBerry">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="California" id="california">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Streetcars" id="streetcars">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Software" id="software">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Functional Programming" id="functionalProgramming">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Simulations" id="simulations">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Elegance" id="elegance">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Simplicity" id="simplicity">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Scrambling" id="scrambling">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Newfoundland" id="newfoundland">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Streets" id="streets">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Rain Forests" id="rainForests">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Childhood" id="childhood">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Skiing" id="skiing">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Afro-Cuban Music" id="afroCubanMusic">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Salsa" id="salsa">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Skipping Rocks, etc" id="skippingRocks">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Sushi" id="sushi">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Elders" id="elders">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Planet Earth" id="planetEarth">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Friendships" id="friendships">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Dreams" id="dreams">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Silly" id="silly">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Comedy" id="comedy">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Improv" id="improv">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Musicals" id="musicals">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Plays" id="plays">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Moving" id="moving">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Construction" id="construction">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Integration with Nature" id="integrationWithNature">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Reuse" id="reuse">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="East Bay" id="eastBay">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+      <interest topic="Family" id="family">
+        <detailText name="detailText">
+          Stub
+        </detailText>
+      </interest>
+    </pageView>
+  </class>
+</library>

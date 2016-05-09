@@ -1,0 +1,43 @@
+<library>
+  <include href="utils.lzx"/>
+  <!-- Use as <pageViewText><pageText>blah</pageText></pageViewText> since text can't be embedded directly in <pageViewText> -->
+  <!-- Put a pageText here -->
+  <class name="me" extends="pageView" clip="true">
+    <pageText name="textHolder">
+    I started my career as a software developer at the end of the dot.com boom, working for several small to large firms
+    on software that drove commercial web sites. In time with the constant exposure to inhospitable urban environments, from
+    Silicon Valley's gloomy freeway office parks to isolated suburban homes, I realized that I wanted to turn my efforts toward
+    urban planning.
+    <br/>
+    <br/>
+    Having now formally studied the field, my priority as an urbanist is to encourage urban form that supports the best
+    qualities of human settlements. To do so requires the promotion of communal activities that enhance everyone's lives--the
+    combination of socializing, creativity, work, and grounding to natural processes. There are many forces that impede these
+    communal gains, especially the fixation on consumption, market solutions, and a dwindling direct reliance on other
+    people. The most destructive development in our urban settlements is the near century domination of the automobile.
+    Whether the symptom of problems (e.g. isolation via sparse land use) or the direct cause (e.g. dangerous streets), the car
+    is the antagonist of urbanism. I aim to help reshape urban space to enhance community by highlighting and removing the
+    fundamentally incompatible use of cars.
+    <br/>
+    <br/>
+    The dominant urban thinking of the moment is that urban space might be sharable between people and cars--that they are
+    compatible uses--and practitioners and academics thus promote occasional pedestrianized streets and accept the
+    far-from-occasional car-dominant public space. The notion of shared space is indeed a helpful first step toward the removal
+    of cars, but it is today mistaken as our final destination. Urban planners and transportation engineers are fixated on
+    safe ways for people to co-exist with cars. Much like the failed attempt at smoking sections in restaurants, we will eventually acknowledge that cars and people
+    are fundamentally incompatible in urban space.
+    <br/>
+    <br/>
+    There is an overwhelming political complexity to making good changes to urban space, which is daunting to all but the most
+    skilled politicians. My inclination is that the most compelling solutions
+    should drive the politics, and those solutions are crafted through wisdom and hard work. The wisdom needed to improve a
+    particular urban space combines local familiarity of a space with formal knowledge about historically successful built form.
+    It follows that people should attempt to improve the urban spaces in which they live or otherwise know intimately. To convince
+    and be convinced of the best ideas, a significant part of the solution is software that helps demonstrate compelling
+    improvements to the urban environment using simulations and data driven models. My goal is to combine my software and urban
+    planning knowledge to give software a pivotal roll in restructuring urban settlements to favor car-free space and comprehensive
+    transit.
+  </pageText>
+  <scrollbar name="scrollbar" visible="$once{parent.textHolder.height > parent.height+50}"/>
+  </class>
+</library>

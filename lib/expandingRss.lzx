@@ -1,0 +1,23 @@
+<library>
+  <include href="postBackground.lzx"/>
+  <include href="rssText.lzx"/>
+  <include href="rssExpandingPost.lzx"/>
+  <class name="expandingRss">
+      <attribute name="datasetName" type="string"/>
+      <attribute name="itemPath" type="string" value=":/rss/channel/item[1-10]"/>
+      <attribute name="titlePath" type="string" value="title/text()"/>
+      <attribute name="linkPath" type="string" value="link/text()"/>
+      <attribute name="descriptionPath" type="string" value="description/text()"/>
+      <attribute name="datePath" type="string" value="pubDate/text()" />
+      <attribute name="showDate" value="true"/>
+      <attribute name="interactive" value="false"/>
+      <attribute name="activeY"/>
+      <attribute name="width" value="${parent.width}"/>
+
+      <view id="expandingPostId" name='posts' width="${parent.width}" height="${null}">
+         <simplelayout axis="y" spacing="10" />
+         <rssExpandingPost name="rssPost"/>
+      </view>
+  </class>
+
+</library>

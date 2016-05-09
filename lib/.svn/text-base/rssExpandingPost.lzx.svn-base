@@ -1,0 +1,47 @@
+<library>
+  <include href="rssPost.lzx"/>
+  <class name='rssExpandingPost' extends='rssPost' width="${parent.width}" height="${null}">
+    <attribute name="selected" value="false"/>
+    <attribute name="rssClassReference" value="${classroot}"/>
+    <handler name="ondata"><![CDATA[
+      if (canvas.getClones(this)[0]==this) {
+        this.setAttribute('selected', true)
+      }
+    ]]></handler>
+    <handler name="onselected"><![CDATA[
+      if (selected) {
+        // Deselect siblings
+        canvas.getClones(this).without(this).each(function(x) {
+          if (x.selected) {
+            x.setAttribute('selected', false);
+          }
+        });
+        this.rssText.setAttribute('expanded', true);
+        // Advertise the active post position to help a scrollbar out
+        this.rssClassReference.setAttribute('activeY', this.y)
+      } else {
+        this.rssText.setAttribute('expanded', false);
+      }
+  ]]></handler>
+
+    <blogPostBackground name="postBackground" height="${parent.rssText.height}">
+      <handler name="onselected" reference="this">
+        parent.setAttribute('selected', !parent.selected)
+      </handler>
+    </blogPostBackground>
+    <rssText name="rssText" y="${parent.postBackground.headerHeight}"
+             titlePathText="$path{classroot.rssClassReference.titlePath}"
+             linkPathText="$path{classroot.rssClassReference.linkPath}"
+             datePathText="$path{classroot.rssClassReference.datePath}"
+             descriptionPathText="$path{classroot.rssClassReference.descriptionPath}"
+             showDate="${classroot.rssClassReference.showDate}"
+             fontsize="${classroot.rssClassReference.fontsize}"
+             expanded="false"
+             expandable="true"
+            >
+      <handler name="onselected" reference="this">
+        parent.setAttribute('selected', !parent.selected)
+      </handler>
+    </rssText>
+  </class>
+</library>

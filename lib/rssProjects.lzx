@@ -1,0 +1,38 @@
+<library>
+  <include href="expandingRss.lzx"/>
+  <!-- Dataset bound to blog's RSS feed. -->
+  <dataset name="projectsRssFeed">
+    <items>
+      <item>
+        <title>
+          Test Title
+        </title>
+        <link>
+        </link>
+        <description>
+          Test Description
+        </description>
+        <pubDate>
+          2012-01-10
+        </pubDate>
+      </item>
+    </items>
+  </dataset>
+
+  <class name="rssProjects">
+  <attribute name="activeY"/>
+    <attribute name="width" value="${parent.width}"/>
+    <attribute name="height" value="${parent.height}"/>
+    <expandingRss name="expandingRss" datasetName="projectsRssFeed" fontsize="${classroot.fontsize}">
+      <attribute name="itemPath" type="string" value="items/item"/>
+      <attribute name="titlePath" type="string" value="title/text()"/>
+      <attribute name="linkPath" type="string" value="link/text()"/>
+      <attribute name="descriptionPath" type="string" value="description/text()"/>
+      <attribute name="datePath" type="string" value="pubDate/text()" />
+
+      <handler name="onactiveY">
+        parent.setAttribute('activeY', this.activeY)
+      </handler>
+    </expandingRss>
+  </class>
+</library>

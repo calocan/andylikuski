@@ -1,0 +1,5 @@
+<canvas debug="true" bgcolor="#D6E6F2" height="1000" width="1000">
+  <include href="interests.lzx"/>
+  <script src="javascripts/osteele/lib/collections.js"/>
+  <interests name="interests"/>
+</canvas>

@@ -1,0 +1,302 @@
+/* **  Magic Ink:  Information Software and the Graphical Interface**  by Bret Victor****  CSS style sheet */
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 1.0em Times,serif;
+  line-height: 2.0;
+  color: #111;
+  background: #fff;
+  width: 640px;
+  padding: 1.5em 25px 1.5em 40px;
+}
+p {
+  text-align: left;
+  line-height: 1.8em;
+  margin: 0 0 1em;
+}
+strong {
+  /* Inline headings */
+  color: #000;
+  font-weight: bold;
+}
+b {
+  /* Important statements */
+  color: #d00;
+  font-weight: normal;
+}
+acronym {
+  /* Firefox dotted-underlines acronyms by default. */
+  border: none;
+}
+blockquote {
+  margin: 0.25em 0;
+  padding: 0.25em 40px;
+  font-style: italic;
+}
+.image {
+  text-align: center;
+}
+.snapshot {
+  margin-left: 20px;
+}
+.logo {
+  margin-left: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+.futz {
+  color: #711;
+}
+/* Links */
+a img {
+  border: none;
+}
+a:link, a:visited {
+  color: #555;
+}
+a:hover {
+  color: #000;
+  background-color: #f4f2e4;
+}
+/* Headings */
+h1 {
+  /* Paper title */
+   width: 800px;
+  font: 2em Times,serif;
+  margin: 0;
+  margin-top: 2em;
+  text-align: center;
+}
+h2 {
+  /* Section title */
+  font: 1.5em Georgia,serif;
+  letter-spacing: 1px;
+  color: #050;
+  margin: 2.0em 0 0.65em;
+  margin-left: -15px;
+}
+h3 {
+  /* Paper subtitle */
+  font: 1em Verdana,Arial,sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 0.75em;
+}
+h4 {
+  width: 800px;
+  font: 0.8em Georgia,serif;
+  letter-spacing: 1px;
+  color: #333;
+  text-align: center;
+}
+h5 {
+  /* Draft notice */
+  font: bold 1.5em Verdana,Arial,sans-serif;
+  text-align: center;
+  margin-bottom: 1em;
+}
+#draft {
+  margin-left: 8px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  font: 0.8em Verdana,Arial,sans-serif;
+  color: #777;
+  border-bottom: 1px solid #aaa;
+}
+/* Lists */
+ul {
+  margin-bottom: 1.25em;
+  list-style-position: outside;
+  padding-left: 40px;
+}
+li {
+  margin-bottom: 0.66em;
+  line-height: 1.6em;
+}
+/* Sidenotes */
+.asterisk {
+  color: #444;
+}
+.sidenote {
+  position: absolute;
+  left: 700px;
+  width: 300px;
+  font: 0.6em verdana,sans-serif;
+  color: #444;
+  line-height: 1.4em;
+  word-wrap:break-word;
+}
+
+/* contained relative to a containing sidenote */
+.sidenoteLeft {
+  float: left;
+  width: 200px;
+}
+.sidenoteRight {
+  float: right;
+  width: 200px;
+}
+/* clear the floats from .sidenoteLeft and .sidenoteRight */
+.sidenoteNext {
+   position:relative;
+   clear:both
+}
+.principleList {
+    position:relative;
+    padding-bottom:30px;
+}
+.iconImage {
+    width:30px;
+    vertical-align:middle;
+    position:absolute;
+    left:0px;
+    z-index:-1;
+}
+.principleListText {
+
+    position:relative;
+    color: #009;
+    left:15px;
+    margin-right:15px;
+    height:40px;
+}
+
+
+.principles {
+  position: absolute;
+  top: 10px;
+  left: 650px;
+  width: 400px;
+  font: 0.6em verdana,sans-serif;
+  color: #444;
+  line-height: 1.4em;
+}
+.backgroundImage {
+    position:absolute;
+    z-index:-1;
+	filter:alpha(opacity=60);
+	-moz-opacity:0.6;
+	-khtml-opacity: 0.6;
+	opacity: 0.6;
+}
+.backgroundImageLighter {
+    width:400px; 
+    position:absolute;
+    z-index:-1;
+	filter:alpha(opacity=40);
+	-moz-opacity:0.4;
+	-khtml-opacity: 0.4;
+	opacity: 0.4;
+}
+.key {
+  color: #009;
+}
+.bibliography {
+    text-indent: -30px;
+    margin-left: 30px;
+    line-height: 1;
+}
+
+/* Case study */
+#case_study {
+  background-color: #f8f8f8;
+  border: solid 1px #ccc;
+  margin-left: -25px;
+  padding-left: 25px;
+  margin-right: -25px;
+  padding-right: 25px;
+  padding-top: 0.2em;
+}
+/* Tool demo */
+#tool_demo {
+  border-left: solid 1px #ccc;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+/* Anchors */
+a {
+  color: #aaf;
+}
+a.anchor:link, a.anchor:visited {
+  color: #aaf;
+}
+a.anchor {
+  position: absolute;
+  left: 24px;
+  margin-top: 3px;
+  font: 1em verdana,sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+/* Front matter table of contents */
+#front_toc {
+  color: #666;
+  width: 800px;
+}
+#front_toc p {
+  font-style: italic;
+}
+#front_toc ul {
+  padding-left: 20px;
+  list-style-type: none;
+  font-size: 0.9em;
+  font-style: italic;
+}
+#front_toc li {
+  line-height: 1.8em;
+  margin-bottom: 0.4em;
+}
+#front_toc a {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-style: normal;
+}
+#front_toc a:link, #front_toc a:visited {
+  color: #333;
+  text-decoration: none;
+}
+#front_toc a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+/* Floating table of contents */
+#toc {
+  position: fixed;
+  margin: 0;
+  top: 0px;
+  left: 890px;
+  width: 300px;
+  font: 0.8em verdana,sans-serif;
+  display: none;
+}
+#toc ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#toc p {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+#toc li {
+  line-height: 1em;
+}
+#toc a:link, #toc a:visited {
+  color: #aaa;
+  text-decoration: none;
+}
+#toc a:hover {
+  color: #222;
+}

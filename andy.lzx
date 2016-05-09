@@ -1,0 +1,129 @@
+<canvas  bgcolor="#D6E6F2" height="100%" width="100%">
+  <debug name="debugwindow" x="0" y="582" width="800" height="100"/>
+  <resource name="cylinder" src="/images/cylinder.png"/>
+  <script src="javascripts/osteele/lib/collections.js"/>
+
+  <attribute name="widthRatio" value="${measureWidth()/width}"/>
+  <attribute name="heightRatio" value="${measureHeight()/height}"/>
+  <attribute name="font" value="Gill Sans MT"/>
+  <attribute name="fontsize" value="12"/>
+  <attribute name="naturalPopupWidth" value="${canvas.background.resourcewidth-canvas.foreground.leftButtonBar.resourcewidth-canvas.foreground.rightButtonBar.resourcewidth}"/>
+
+  <include href="pages.lzx"/>
+  <include href="lib/buttonBar.lzx"/>
+
+  <dataset name="leftButtonData">
+    <area name="me" label="Andy Likuski&lt;br/&gt;Urban Planner and Software Engineer"/>
+	<area name="resume" label="Résumé"/>
+    <area name="blog" label="Blog"/>
+    <area name="contact" label="Contact"/>
+    <!--<area name="projects" label="Active Projects"/>-->
+    <area name="reading" label="Reading"/>
+  </dataset>
+  <dataset name="rightButtonData">
+    <area name="thesis" label="Thesis&lt;br/&gt;&lt;i&gt;Rescape&lt;/i&gt;"/>
+    <area name="university_pedestrianization_plan" label="Tufts Area Plan"/>
+    <area name="transportation_public_space" label="Transportation and Public Space"/>
+    <area name="transportation_corridor" label="Transportation and Corridors"/>
+    <area name="urban_design" label="Urban Design for Community"/>
+    <area name="gis" label="G.I.S. for New Rail Service"/>
+    <area name="interactive" label="Interactive&lt;br/&gt; Planning"/>
+    <area name="screens" label="Urban Screens"/>
+    <area name="portfolio" label="Carfree Portfolio"/>
+    <area name="local_gov" label="Local Transit Financing"/>
+  </dataset>
+
+  <resource name="backgroundImage" src="images/background.png"/>
+  <resource name="leftBar">
+    <frame src="images/leftbar.png"/>
+    <frame src="images/blank.png"/>
+  </resource>
+  <resource name="rightBar">
+    <frame src="images/rightbar.png"/>
+    <frame src="images/blank.png"/>
+  </resource>
+  <resource name="titleBar" src="images/title_bar.png"/>
+
+
+  <handler name="oninit" >
+    // Get ride of the laszlo context menu
+    canvas.setDefaultContextMenu(null);
+    document.oncontextmenu = null;
+  </handler>
+
+    <view name="background" resource="backgroundImage" opacity="${canvas.foreground.popup.pages.selectedPage ? 0.2 : 1}"
+          width="${this.resourcewidth/parent.width > this.resourceheight/parent.height ? parent.width : parent.height*this.resourcewidth/this.resourceheight}"
+          height="${this.resourcewidth/parent.width > this.resourceheight/parent.height ? this.width*this.resourceheight/this.resourcewidth : parent.height}"
+          >
+    </view>
+    <view name="foreground"
+          width="${null}"
+          height="${null}"
+          fontsize="12"
+     >
+      <method name="buttonSelected" args="button"><![CDATA[
+        if (button.buttonSelected == true) {
+          lz.Browser.loadURL('#'+button.pageName)
+          // Tell the popup to load the corresponding page
+          canvas.foreground.popup.pages.setAttribute('selectedPage', button.pageName);
+          // Deselect the other buttons
+          [leftButtonBar, rightButtonBar].each(function(x) {x.deselectAllBut(button)})
+        } else {
+          if (![leftButtonBar, rightButtonBar].map(function(x) {return x.anySelected()}).some(function(x) {return x})) {
+            canvas.foreground.popup.pages.setAttribute('selectedPage', null);
+            fragment=new lz.URL(lz.Browser.getURL()).fragment
+            lz.Browser.loadURL(lz.Browser.getURL().replace('#'+fragment, '#'))
+          }
+        }
+      ]]></method>
+      <buttonBar name="leftButtonBar" x="0" slope="-15" buttondatapath="leftButtonData:/area" resource="leftBar" frame="1" title="Basics">
+        <handler name="onbuttonChange" args="button">
+          parent.buttonSelected(button)
+        </handler>
+        <handler name="onwidth" reference="parent.popup.pages">
+          this.toggleSize(parent.popup.pages.width > canvas.naturalPopupWidth)
+        </handler>
+      </buttonBar>
+
+      <view name="popup" x="${parent.leftButtonBar.x+parent.leftButtonBar.width}" width="$once{canvas.naturalPopupWidth}" height="$once{parent.height-20}" fontsize="14" >
+        <handler name="onwidth" reference="pages">
+          // Size based on pages
+          this.setAttribute('width', null);
+        </handler>
+        <!--titles-->
+        <simplelayout name="simplelayout" axis="y"/>
+        <view name="titleViewBar" x="${parent.width/2-this.width/2}" resource="titleBar">
+          <text align="center" textalign="center" y="$once{parent.height/5-this.height/2}" font="$once{canvas.font}" fontsize="20" fgcolor="#681C2C" text="Evolving to carfree urban space and comprehensive transit" />
+        </view>
+        <pages name="pages" id="pageref" defaultWidth="$once{parent.width}" width="$once{parent.width}"
+               height="${parent.height-parent.simplelayout.spacing-parent.titleViewBar.height}" fontsize="${parent.fontsize}"/>
+      </view>
+
+      <buttonBar name="rightButtonBar" x="$once{setx()}" spacing="10" slope="15" buttondatapath="rightButtonData:/area" resource="rightBar" frame="1" title="Projects">
+        <handler name="onbuttonChange" args="button">
+          parent.buttonSelected(button)
+        </handler>
+        <method name="setx">
+            this.setAttribute('x', [canvas.width-this.width, parent.popup.x+parent.popup.width].min()) 
+        </method>
+        <handler name="onwidth"  reference="parent.popup.pages">
+          this.toggleSize(parent.popup.pages.width > canvas.naturalPopupWidth)
+          this.setx()
+        </handler>
+        <handler name="onwidth" reference="canvas">
+          this.setx()
+        </handler>
+        <handler name="onwidth">
+          this.setx()
+        </handler>
+        <handler name="onx" reference="parent.popup">
+          this.setx()   
+        </handler>
+        <handler name="onwidth" reference="parent.popup">
+          this.setx()   
+        </handler>
+        <animator name='shift' duration="1000" attribute="x" relative="false" started="false"/>
+      </buttonBar>
+    </view>
+    <html width="1" height="1" src="links.html"/>
+</canvas>

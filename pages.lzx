@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+  <include href="lib/rss.lzx"/>
+  <include href="lib/rssBlog.lzx"/>
+  <include href="lib/rssBooks.lzx"/>
+  <include href="lib/rssCalendar.lzx"/>
+  <include href="lib/rssProjects.lzx"/>
+  <include href="lib/utils.lzx"/>
+  <include href="lib/me.lzx"/>
+  <resource name="rescapeImage" src="images/rescape.png"/>
+  <resource name="gisImage" src="images/gis.png"/>
+  <class name="pages" fontsize="${parent.fontsize}">
+    <attribute name="selectedPage" type="string" value=""/>
+    <attribute name="defaultWidth"/>
+    <!-- Stretch to fit the subview to an explicitly given width or take the parent's width -->
+    <method name="resizeWidth">
+      this.setAttribute('width', [defaultWidth, this.subviews.map(function(x) {return x.width || 0}).max()].max())
+    </method>
+
+    <handler name="onselectedPage"> <!-- for some reason this doesn't work as a constrain on none.applied -->
+      this.none.setAttribute('applied', selectedPage==null)
+    </handler>
+    <state name="none">
+      <handler name="onapplied">
+        if (this.applied) {
+          classroot.resizeWidth()
+        }
+      </handler>
+    </state>
+    <state name="me" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          classroot.resizeWidth()
+        }
+      </handler>
+      <me name="meText" width="$once{parent.defaultWidth}"/>
+    </state>
+    <state name="resume" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        parent.resumeHtml.setAttribute('src','resume.html') //lazy load
+        classroot.resizeWidth()
+        }
+      </handler>
+      <htmlView bgcolor='white' name='resumeHtml' width="$once{parent.defaultWidth*widthFactor}" pdf="Andy_Likuski.pdf"/>
+    </state>
+    <state name="blog" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        classroot.resizeWidth()
+        }
+      </handler>
+      <pageView width="$once{parent.defaultWidth}" name="blogPage" fontsize="${classroot.fontsize}">
+        <simplelayout axis="y" spacing="20"/>
+        <pageText name="intro">
+          I regularly blog about urban planning issues that interest me at <a target="blog" href="http://degagelavoie.blogspot.com">http://degagelavoie.blogspot.com</a>.
+          You may view recent posts below, visit the blog, or subscribe to the <a href="http://degagelavoie.blogspot.com/feeds/posts/default?alt=rss">RSS feed</a>.
+        </pageText>
+        <view name="blogView" width="${parent.width}" height="${parent.height-parent.intro.height-20}" clip="true" opacity=".80">
+          <rssBlog name="blogRss" width="${parent.width}" height="${null}" clip="true" fontsize="${classroot.fontsize}" y="${this.activeY}">
+            <handler name="onactiveY">
+              this.setAttribute('y', -1*this.activeY)
+            </handler>
+          </rssBlog>
+          <scrollbar name="scrollbar" visible="${parent.blogRss.height > this.height}"/>
+        </view>
+      </pageView>
+    </state>
+    <state name="contact" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        classroot.resizeWidth()
+        }
+      </handler>
+      <pageView name="contactView" width="$once{parent.defaultWidth}">
+      <simplelayout axis="y" spacing="10"/>
+        <pageText name="intro">
+          I currently reside in Berkeley, California. Please contact me by email or phone.
+          <br/>
+          <br/>andy@likuski.org
+          <br/>1-510-289-0902
+          <br/>
+        </pageText>
+        <!--
+        <pageText> I'm tentatively planning on attending the following events:</pageText>
+        <pageView>
+          <rssCalendar name="calendarRss" width="${parent.width}" height="${null}" clip="true" fontsize="${classroot.fontsize}" y="${this.activeY}">
+            <handler name="onactiveY">
+              this.setAttribute('y', -1*this.activeY)
+            </handler>
+          </rssCalendar>
+          <scrollbar name="scrollbar" visible="${parent.calendarRss.height > this.height}"/>
+        </pageView>
+        -->
+      </pageView>
+    </state>
+    <state name="projects" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        classroot.resizeWidth()
+        }
+      </handler>
+      <pageView name="projects" width="$once{parent.defaultWidth}" height="${parent.height}" clip="true">
+        <simplelayout axis="y" spacing="10"/>
+        <pageText name="intro">
+          I am currently engaged in (or thinking about) the following projects, some of which are individual and others collaborative. If you are interested in participating in any of the following, please contact me.
+        </pageText>
+        <view name="projectsView" width="${parent.width}" height="${parent.height-parent.intro.height-20}" clip="true" opacity=".80">
+          <rssProjects name="projectsRss" width="${parent.width}" height="${null}" clip="true" fontsize="${classroot.fontsize}" y="${this.activeY}">
+            <handler name="onactiveY">
+              this.setAttribute('y', -1*this.activeY)
+            </handler>
+          </rssProjects>
+          <scrollbar name="scrollbar" visible="${parent.blogRss.height > this.height}"/>
+        </view>
+        <!--
+        <pageView name="projectList">
+          <simplelayout axis="y" spacing="5"/>
+          <pageText name="rescape" bgcolor="white" cornerradius="10">
+            Rescape is a plugin to Google Sketchup that I wrote for my master's thesis. It is currently in beta and available for download and feedback. Rescape is open-source and publicly hosted for download and development. If you're interested in trying Rescape, please download it (for Macintosh or Windows) and send me your feedback.
+          </pageText>
+          <pageText name="freudenstadt">
+            Project Freudenstadt is a collaboration to create a mobile advocacy and interview station. It's still on the drawing board, but I will publish more about it as it grows up.
+          </pageText>
+          <pageText name="collegeAveRescape">
+            My first application of the Rescape software is to do a pedestrian-oriented redesign of College Ave in Berkeley and Oakland, CA. The intent of the project is to present the community and visitors of College Ave with 3D models that demonstrate the phased transformation of the street into a pedestrian space with high quality public transit.<br/><br/>
+            College Ave is a highly successful retail street that stretches from UC Berkeley south through the neighborhoods of Elmwood and Rockridge. There are three successful business districts (Elmwood, Rockridge north of I24/BART, and Rockridge south of I24/BART). The entire length of the street is 2.2 miles. UC Berkeley, Elmwood, and Rockridge are each separated by a few long blocks of housing and Rockridge is split by eight lanes of elevated freeway and a two track BART line that hosts the Rockridge BART station. College Ave consists of two traffic lanes and two parking lanes throughout. It originally <a target="other" href="http://en.wikipedia.org/wiki/Rockridge,_Oakland,_California">hosted electric trolleys</a>, which were replaced in the 1950s by AC Transit bus service, which now run at relatively high frequencies along the street, though the principle line, the 51, was recently split into the 51A and 51B at Rockridge BART station to reduce service delays on the lengthy route from West Berekely to Alameda via Oakland.<br/><br/> College Ave is roughly paralleled by Telegraph Ave, a wide thoroughfare that is at minimum 0.2 miles from College Ave (at UC Berkeley) and at maximum 0.7 miles from College Ave (at Broadway in Oakland.) College Ave is additionally intersected by I24 with close entrance and exit ramps, diagonally by Claremont Ave, a wide thoroughfare, and by other major streets such as Ashby Ave and Bankroft Ave. Car traffic on College Ave is congested throughout much of the day, especially at Ashby Ave in Elmwood. The streets of College Ave are crowded with pedestrians throughout the day and evening, especially in the business district. The transit service provided by the buses is useful but too slow, and often the buses are severely slowed by traffic and the frequency of stops. The alternatives to College Ave are numerous and wide roads (and freeway), some of which are seldom burdened with heavy traffic.<br/><br/>
+            Given the business district success, high volumes of pedestrians (including those of major university with dorms on College Ave), well-connected transit routes, and availability of alternative driving routes, College Ave is well poised for a streetscape transformation. The end goal should to be remove parking lanes in favor of wider pedestrian space and for use by the dozens of restaurants, bars, and coffeeshops that line the streets but have next to no outdoor seating. The driving lanes should be reduced to one direction and then removed completely in favor of two lanes to be used only for transit, emergency vehicles, disabled access, and off-hour deliveries. The various segments and intersections of College Ave implies that pedestrianization and dedicated non-automobile lanes should be phased in. The first optional phase should be the elimination of one driving direction and one parking lane for the entire length of the street. This requires that the remaining drive and parking lane be either the center lanes of the street or one half of the street. The second phase (or first if the previous is omitted) is to fully pedestrianize the most popular business areas and pedestrian areas. These are, from north to south, the dorm areas of UC Berkeley, the Elmwood business district on both sides of Ashby Ave, and the business district immediately south of I24 and BART extending south for some number of blocks. Due to the difficulty of working with two cities, it is more practical to begin with the pedestrianization of the Berkeley sections, which begin shortly after Claremont Ave.<br/><br/>
+            The city of Berkeley has many <a href="http://www.ci.berkeley.ca.us/ContentDisplay.aspx?id=16124">pedestrian and transit priorities in place</a> and will probably be better to work with than Oakland, despite the high levels of NIMBYism that likeley exist.<br/><br/>
+            For more information visit my <a href="">College Ave project site</a>
+          </pageText>
+          <pageText name="transitToThere">
+             There is a need for a clever mobile App that lets you train it about the most common trips that you make on transit, so that you can bring up the app and immediately see the best way to get from point A to B using real-time information. Sites such as Google Maps provide useful transit directions, but thus far without incorporating real-time data. An app is needed which you teach how to calculate your most common trip options using available real-time data feeds. The app should display your location in the center of the screen and then have your most common trips from that location in a circle around the center location. You would simply click the common location to get the transit directions using the options that you already taught the app. I don't plan to work on this anytime soon, but it would be a major asset for serious user of transit.
+          </pageText>
+        </pageView>
+        <scrollbar name="scrollbar" scrolltarget="parent.projects"/>
+    -->
+      </pageView>
+    </state>
+    <state name="reading" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          classroot.resizeWidth()
+        }
+      </handler>
+      <pageView name="bookPage" width="$once{parent.defaultWidth}">
+        <simplelayout axis="y" spacing="10"/>
+        <pageText name="intro">
+          I have my reading lists shared at <a href="http://www.librarything.com/catalog.php?view=calocan&amp;collection=-1&amp;shelf=list">librarything.com</a>
+          <br/>Here is a sampling of books on my reading lists.
+        </pageText>
+        <view name="bookView" width="${parent.width}" height="${parent.height-parent.intro.height-20}" clip="true" opacity=".80">
+          <rssBooks name="bookRss" width="${parent.width}" height="${null}" clip="true" fontsize="${classroot.fontsize}" y="${this.activeY}">
+            <handler name="onactiveY">
+              this.setAttribute('y', -1*this.activeY)
+            </handler>
+          </rssBooks>
+          <scrollbar name="scrollbar" visible="${parent.bookRss.height > this.height}"/>
+        </view>
+      </pageView>
+    </state>
+    <state name="interests" applied="${this.name==parent.selectedPage}">
+    </state>
+    <state name="thesis" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          classroot.resizeWidth()
+        }
+      </handler>
+      <pageView name="rescapeView" resource="rescapeImage" width="$once{parent.defaultWidth}">
+        <pageText x="422" y="200" width="328" fgcolor="#681C2C">
+          The goal of Rescape is to give people free software tools to redesign their neighborhood or entire city or town to have highly desirable carfree spaces and comprehensive transit. Using free, easy-to-use tools, people can propose an urban space transformation and then share their ideas with others using compelling 3D images coupled with practical plans.
+          <br/><br/>
+          <a target="other" href="http://code.google.com/p/rescape/downloads/list">Try out</a> a beta release of Rescape!
+          <br/><br/>
+          Read my <a target="other" href="http://dl.dropbox.com/u/4800559/Thesis.pdf">thesis paper</a>.
+        </pageText>
+      </pageView>
+    </state>
+    <state name="urban_design" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        classroot.resizeWidth()
+        }
+      </handler>
+      <pageView width="$once{parent.defaultWidth}">
+        <simplelayout axis="y" spacing="20"/>
+        <pageText>
+          I completed a three-person project to redesign a neighborhood in Somerville, MA according to green urban design principles.
+          We studied a vacant property on a busy transportation corridor that has been purchased by the city and proposed radical
+          changes to the study parcel and the public space around it. Our report proposed converting the vacant property and adjacent
+          lots to a community-oriented and economically viable space consisting of a Latin music ballroom, restaurant, residential and office space, a public square,
+          and a community garden. We addition advocated major traffic calming on the boulevard by creating a mixed use street that
+          reintroduced streetcar service, reduced traffic to two 15mph lanes without on-street parking, removed excess signage, and
+          replaced the sidewalk and asphalt with a level pedestrian-oriented surface. This project was my first use of Google Sketchup, which
+          later prompted me to write Sketchup plugins as part of my thesis.
+        </pageText>
+        <pageText>
+          View or download the <a target="other" href="urban_design.pdf">full report</a>.
+        </pageText>
+        <view resource="images/urban_design/urban_design.png" xscale=".50" yscale=".50"/>
+      </pageView>
+    </state>
+    <state name="interactive" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          classroot.resizeWidth()
+        }
+      </handler>
+      <pageView width="$once{parent.defaultWidth}">
+        <simplelayout axis="y" spacing="15"/>
+        <pageText name="text">
+          <handler name="oninit">
+            this.setAttribute('height', height+25)
+          </handler>
+          I participated in a joint project called Open Neighborhood between Tufts University and the city of Acton, MA in 2009-10 that sought creative ways to combine software technology
+          with community participation to aid in planning. We used a combination of software technologies:
+          <br/>
+          <br/>*The 3D Virtual World software <i>Second Life</i> to model a proposed redevelopment site
+          <br/>*An <i>Adobe Flash</i> web application to allow users to remodel the site themselves
+          <br/>*A dynamic web site that allowed plans created by users to be shared and commented upon.
+          <br/>*Google <i>Sketchup</i> models of the best ideas.
+          <br/><br/>
+          My primary roll was to build and deploy the dynamic web site (which no longer exists)
+          as well as help organize and run a series of community events. Read the final report on the project
+          <a target="other" href="http://onacton.ase.tufts.edu/wp-content/blogs.dir/14/files/2011/02/Final_Report_to_Acton.pdf">here</a> or visit the <a target="other" href="http://acton.open-neighborhood.org/">current website</a>.
+        </pageText>
+        <view>
+          <view name="image1" resource="images/interactive/interactive1.png"/>
+          <view y="${parent.image1.y+parent.image1.height*.3}" x="${parent.width*.6}" xscale=".75" yscale=".75" resource="images/interactive/interactive2.png"/>
+        </view>
+      </pageView>
+    </state>
+    <state name="gis" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        classroot.resizeWidth()
+        }
+      </handler>
+      <pageView name="gisView" cornerradius="10" resource="gisImage" width="$once{parent.defaultWidth}">
+      </pageView>
+    </state>
+    <state name="university_pedestrianization_plan" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        parent.tufts.setAttribute('src','http://dl.dropbox.com/u/4800559/Tufts%20Area%20Plan.pdf') //lazy load
+        classroot.resizeWidth()
+        }
+      </handler>
+      <view y="${(parent.height-this.height)/2}" name='backdrop'>
+        <text>Please wait for pdf... Check you downloads if nothing appears</text>
+      </view>
+      <htmlView name='tufts' width="$once{parent.defaultWidth*widthFactor}"/>
+    </state>
+    <state name="transportation_public_space" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+        parent.union_square.setAttribute('src','union_square.html') //lazy load
+        classroot.resizeWidth()
+        }
+      </handler>
+      <htmlView name='union_square' width="$once{parent.defaultWidth*widthFactor}" pdf="union_square.pdf"/>
+    </state>
+    <state name="transportation_corridor" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+            parent.mcgrath.setAttribute('src','mcgrath.pdf') //lazy load
+            classroot.resizeWidth()
+        }
+      </handler>
+      <view y="${(parent.height-this.height)/2}" name='backdrop'>
+        <text>Please wait... If no document appears click the link above.</text>
+      </view>
+      <htmlView name='mcgrath' width="$once{parent.defaultWidth*widthFactor}" widthFactor="1.35"/>
+    </state>
+    <state name="local_gov" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          parent.financing.setAttribute('src','financing.html') //lazy load
+          classroot.resizeWidth()
+        }
+      </handler>
+      <htmlView name='financing' width="$once{parent.defaultWidth*widthFactor}" pdf="financing.pdf"/>
+    </state>
+    <state name="portfolio" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          parent.carfree.setAttribute('src','carfree.html') //lazy load
+        classroot.resizeWidth()
+        }
+      </handler>
+      <htmlView name='carfree' widthFactor="1.35" width="$once{parent.defaultWidth*widthFactor}"/>
+    </state>
+    <state name="screens" applied="${this.name==parent.selectedPage}">
+      <handler name="onapplied">
+        if (this.applied) {
+          parent.urbanScreens.setAttribute('src','screens.html') //lazy load
+          classroot.resizeWidth()
+        }
+      </handler>
+      <htmlView name='urbanScreens' widthFactor="1.5" width="$once{parent.defaultWidth*widthFactor}"/>
+    </state>
+  </class>
+</library>

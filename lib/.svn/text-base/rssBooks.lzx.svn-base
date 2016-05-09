@@ -1,0 +1,46 @@
+<library>
+  <include href="rss.lzx"/>
+  <include href="rssPost.lzx"/>
+  <!-- Dataset bound to blog's RSS feed. -->
+  <dataset name="booksRssFeed"
+           request="true"
+           src="http://www.librarything.com/rss/recent/calocan">
+    <handler name="onerror">
+      if (this.src=='http://www.librarything.com/rss/recent/calocan') {
+        Debug.warn("Couldn't load " + this.src + " Error: "+ this.getErrorString())
+        this.setAttribute('src', 'books.php');
+        this.doRequest();
+      }
+      else if (this.src=='books.php') {
+        Debug.warn("Couldn't load " + this.src + " Error: "+ this.getErrorString())
+        this.setAttribute('src', 'librarything_rss_sample.xml');
+        this.doRequest();
+      }
+    </handler>
+  </dataset>
+  <class name="rssBooks" extends="rss" datasetName="booksRssFeed" showDate="false" range="[1-100]">
+    <rssPost name="rssPost">
+      <rssText name="rssText"
+             titlePathText="$path{classroot.titlePath}"
+             linkPathText="$path{classroot.linkPath}"
+             datePathText="$path{classroot.datePath}"
+             descriptionPathText="$path{classroot.descriptionPath}"
+             showDate="${classroot.showDate}"
+             fontsize="${classroot.fontsize}"
+             staticHeight="${determineHeight(descriptionPathText)}"
+            >
+        <method name="determineHeight" args="text"><![CDATA[
+          // Remove static height for books with no cover image
+          // Not all browsers determine height based on the <img> tag, sigh
+          descriptionMatches = new RegExp("img src").exec(text)
+          if (descriptionMatches == null) {
+            return null
+          }
+          else {
+            return 150
+          }
+        ]]></method>
+      </rssText>
+    </rssPost>
+  </class>
+</library>

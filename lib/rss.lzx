@@ -1,0 +1,21 @@
+<library>
+  <include href="rssText.lzx"/>
+  <class name="rss">
+      <attribute name="datasetName" type="string"/>
+      <attribute name="range" type="string" value="[1-10]"/>
+      <attribute name="itemPath" type="string" value=":/rss/channel/item"/>
+      <attribute name="titlePath" type="string" value="title/text()"/>
+      <attribute name="linkPath" type="string" value="link/text()"/>
+      <attribute name="descriptionPath" type="string" value="description/text()"/>
+      <attribute name="datePath" type="string" value="pubDate/text()" />
+      <attribute name="showDate" value="true"/>
+      <attribute name="showPastEvents" value="true"/>
+      <attribute name="interactive" value="false"/>
+      <attribute name="defaultplacement" type="string" value="posts"/>
+
+      <view name='posts' id="postsView" width="${parent.width}" height="${null}">
+         <simplelayout axis="y" spacing="10" />
+        <!-- insert rssPost or descendant class instance -->
+      </view>
+  </class>
+</library>

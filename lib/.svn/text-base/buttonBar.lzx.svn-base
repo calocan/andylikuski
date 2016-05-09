@@ -1,0 +1,80 @@
+<library>
+  <include href="lib/pageButton.lzx"/>
+  <class name="buttonBar" width="$once{resourcewidth}">
+    <attribute name="title" type="string" value="${null}"/>
+    <attribute name="slope" type="number" required="true"/>
+    <attribute name="originalslope" value="$once{slope}"/>
+    <attribute name="barwidth" value="${width-Math.abs(height/slope)}"/>
+    <attribute name="buttondatapath" type="string" value="${null}"/>
+    <attribute name="buttonwidth" value="$once{200*.6}"/>
+    <attribute name="spacing" value="20"/>
+    <method name="calculateItemX" args="item">
+      // x=(y-b)/m at y=0 and b=this.height to get the starting point x of the slant
+      // width of the parent - half the bar width - half the button width
+      // then adjust by the bottom y position of the item
+      var barCenterXAtTop= slope > 0 ? this.barwidth/2 : this.width-this.barwidth/2
+      var offsetAtHeight=(item.getAttributeRelative('y', this)+item.height/2)/this.slope
+      return barCenterXAtTop+offsetAtHeight-item.width/2
+    </method>
+    <!-- This event is sent by every child button when it's select state changes -->
+    <event name="onbuttonChange"/>
+    <method name="deselectAllBut" args="button">
+      buttons.pageButton.clones.without(button).each(function(x) {x.setAttribute('buttonSelected',false)})
+    </method>
+    <method name="anySelected">
+      return buttons.pageButton.clones.some(function(x) {return x.buttonSelected})
+    </method>
+    <event name="ontoggleSize"/>
+    <method name="toggleSize" args="minimize">
+      if (minimize) {
+        this.setAttribute('frame', 2)
+        this.setAttribute('width', 125)
+        this.setAttribute('slope', Number.MAX_VALUE)
+      }
+      else {
+        this.setAttribute('frame', 1)
+        this.setAttribute('width', this.resourcewidth)
+        this.setAttribute('slope', this.originalslope)
+      }
+      ontoggleSize.sendEvent()
+      this.bringToFront()
+    </method>
+
+    <simplelayout  axis="y" spacing="20" />
+    <view name="buffer" width="1" height="1">
+    <handler name="oninit">
+      this.setAttribute('x', parent.calculateItemX(this))
+    </handler>
+    </view>
+    <text name="barTitle" text="${parent.title}"  font="$once{canvas.font}" fontsize="20" fgcolor="#681C2C" >
+      <handler name="ontoggleSize" reference="classroot">
+        this.setAttribute('x', parent.calculateItemX(this))
+      </handler>
+      <handler name="oninit">
+        this.setAttribute('x', parent.calculateItemX(this))
+      </handler>
+    </text>
+    <view name="buttons">
+      <simplelayout axis="y" spacing="${classroot.spacing}" />
+      <pageButton name="pageButton" datapath="${parent.parent.buttondatapath}"
+                  width="${classroot.buttonwidth}" height="${1.5*this.title.height}">
+        <handler name="onbuttonSelected">
+          classroot.onbuttonChange.sendEvent(this)
+        </handler>
+        <handler name="ontoggleSize" reference="classroot">
+          this.setAttribute('x', parent.parent.calculateItemX(this))
+        </handler>
+        <!-- Get the URL fragment to determine if this button matches the current page. This can be overridden for non-anchor based pages -->
+        <method name="getPageName">
+          return new lz.URL(lz.Browser.getURL()).fragment
+        </method>
+        <handler name="oninit">
+          if (this.pageName == getPageName()) {
+            this.setAttribute('buttonSelected', true)
+          }
+          this.setAttribute('x', parent.parent.calculateItemX(this))
+        </handler>
+      </pageButton>
+    </view>
+  </class>
+</library>

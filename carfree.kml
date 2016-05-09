@@ -1,0 +1,3748 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>test3.kml</name>
+	<Style id="sh_grn-blank">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<StyleMap id="msn_grn-blank1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-blank0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-blank</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sn_grn-blank0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+  	  
+	    <Placemark>
+			<name>Louvain-la-Neuve</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Louvain-la-Neuve" title="Louvain-la-Neuve">Louvain-la-Neuve</a></td><td>Most or all of the city</td><td></td><td>University town; surface is car free; streets and parking are below pedestrian streets</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.5670947,50.6658957</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Brugge
+(Bruges)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88">Brugge<br />
+(<a href="/wiki/Bruges" title="Bruges">Bruges</a>)</td><td></td><td></td><td>Medieval town with large car free center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>3.2252377,51.2094345</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Gent</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Ghent" title="Ghent">Gent</a></td><td>350,000 m² Entire city heart</td><td>80.000 in car- free zone</td><td>Largest car free area in Belgium; Public transport, taxis and permit holders may enter but not exceed 5&#160;km/h</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>3.720867,51.0535622</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Blagoevgrad</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Blagoevgrad" title="Blagoevgrad">Blagoevgrad</a></td><td>Downtown</td><td></td><td>This small university town of 60,000 contains a quite substantial pedestrian area, with one long walking street and several smaller ones, in addition to two large and one extremely large car free squares.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>23.0947532,42.0224657</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Pazardzhik</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Pazardzhik" title="Pazardzhik">Pazardzhik</a></td><td>Downtown</td><td></td><td>A medium sized Bulgarian city (roughly 80,000 inhabitants) contains a proportionately large pedestrian network, where in one instance five different pedestrian streets intersect.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>24.3321331,42.1913161</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Zlarin</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Zlarin" title="Zlarin">Zlarin</a></td><td>Entire island (8.19&#160;km<sup>2</sup>)</td><td>276</td><td>Only service vehicles and <a href="/wiki/Tractor" title="Tractor">tractors</a> are allowed.<sup class="reference" id="cite_ref-sibenik.hr_0-0"><a href="#cite_note-sibenik.hr-0"><span>[</span>1<span>]</span></a></sup> Approximately 20 electrically powered <a href="/wiki/Golf_cart" title="Golf cart">golf carts</a> are also used.<sup class="reference" id="cite_ref-sibenik.hr_0-1"><a href="#cite_note-sibenik.hr-0"><span>[</span>1<span>]</span></a></sup><sup class="reference" id="cite_ref-1"><a href="#cite_note-1"><span>[</span>2<span>]</span></a></sup></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>15.8466437,43.6895577</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Strøget, Copenhagen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Str%C3%B8get" title="Strøget">Strøget</a>, <a href="/wiki/Copenhagen" title="Copenhagen">Copenhagen</a></td><td>Large downtown car free shopping area</td><td></td><td>Central Copenhagen is one of the largest and oldest examples of auto-free zones, heavily used, much tourist traffic. The city's <a href="/wiki/Bicycle_paths" class="mw-redirect" title="Bicycle paths">bicycle paths</a> are extensive and well-used. photos</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.5727801,55.6780523</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Christiania community, Copenhagen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Freetown_Christiania" title="Freetown Christiania">Christiania community</a>, <a href="/wiki/Copenhagen" title="Copenhagen">Copenhagen</a></td><td>All of an old military reservation</td><td>850</td><td>Several streets with recycled and ad-hoc buildings; car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.5681157,55.6762944</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Suomenlinna</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Suomenlinna" title="Suomenlinna">Suomenlinna</a></td><td>0.8&#160;km² island</td><td>850</td><td>car free fortress in <a href="/wiki/Helsinki" title="Helsinki">Helsinki</a>, service traffic allowed.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>28.8800538,61.8699291</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mont St. Michel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Mont_St._Michel" class="mw-redirect" title="Mont St. Michel">Mont St. Michel</a></td><td>4&#160;km² island</td><td>about 60</td><td>car free fortress/abbey</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.5095636,48.6328595</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Île de Porquerolles, near Toulon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/%C3%8Ele_de_Porquerolles" class="mw-redirect" title="Île de Porquerolles">Île de Porquerolles</a>, near <a href="/wiki/Toulon" title="Toulon">Toulon</a></td><td>Entire island is car-lite and many areas car free</td><td>5000 (summers)</td><td>Resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>5.9311119,43.1251606</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Île de Bréhat, Bretagne</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88">Île de <a href="/wiki/Br%C3%A9hat" class="mw-redirect" title="Bréhat">Bréhat</a>, Bretagne</td><td>Entire island is car free</td><td>421</td><td>Easy for walking/biking</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-2.9986083,48.8455806</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Île d'Yeu, Vendée</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/%C3%8Ele_d%27Yeu" title="Île d'Yeu">Île d'Yeu</a>, Vendée</td><td>Large car free center</td><td>5000 (summer:40000)</td><td>Easy for walking/biking</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-2.3502694,46.7229663</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Île de Batz, Bretagne</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/%C3%8Ele_de_Batz" title="Île de Batz">Île de Batz</a>, Bretagne</td><td>Entire island is car free</td><td>594</td><td>Easy for walking/biking</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.0173658,48.7454634</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lyon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lyon" title="Lyon">Lyon</a></td><td><a href="/wiki/Rue_de_la_R%C3%A9publique" title="Rue de la République">Rue de la République</a>, <a href="/wiki/Rue_Victor_Hugo_(Lyon)" title="Rue Victor Hugo (Lyon)">Rue Victor Hugo</a>, and side streets</td><td>Metro area is about 1.7 million; car free area unknown</td><td>17th-18th C mixed-use 6-story area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.8343287,45.767299</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lyon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lyon" title="Lyon">Lyon</a></td><td>Part of Vieux Lyon</td><td></td><td>Medieval quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.8343287,45.767299</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Port Grimaud</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Grimaud,_Var" title="Grimaud, Var">Port Grimaud</a></td><td>Large car free center</td><td></td><td>Resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.5755751,43.2741921</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rue Mouffetard, Paris</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Rue_Mouffetard,_Paris" title="Rue Mouffetard, Paris">Rue Mouffetard</a>, <a href="/wiki/Paris" title="Paris">Paris</a></td><td>0.5&#160;km</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.3497503,48.8421982</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>The pedestrian mall next to St. Germain, Paris</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>The pedestrian mall next to St. Germain, <a href="/wiki/Paris" title="Paris">Paris</a></td><td>is about 1.5&#160;km long and runs from place Odeon to rue Monge</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.3509871,48.8566667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Pompidou Center, Paris</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Pompidou_Center" class="mw-redirect" title="Pompidou Center">Pompidou Center</a>, <a href="/wiki/Paris" title="Paris">Paris</a></td><td></td><td></td><td>Modern large-scale development</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.3571829,48.8533566</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Les Halles, Paris</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Les_Halles" title="Les Halles">Les Halles</a>, <a href="/wiki/Paris" title="Paris">Paris</a></td><td></td><td></td><td>Redeveloped market area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.3444444,48.8627778</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Montorgueil area, Paris</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/w/index.php?title=Montorgueil_area,_Paris&amp;action=edit&amp;redlink=1" title="Montorgueil area, Paris (page does not exist)" class="new">Montorgueil area, Paris</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.3509871,48.8566667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Dijon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Dijon" title="Dijon">Dijon</a></td><td>Small car free center</td><td></td><td>Old buildings on narrow streets</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>5.0439875,47.327213</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Strasbourg</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Strasbourg" title="Strasbourg">Strasbourg</a></td><td>Part of the old town</td><td></td><td>Medieval core</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.7437488,48.5829331</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colmar</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colmar" title="Colmar">Colmar</a></td><td>Town Center</td><td></td><td>Large historic pedestrian area in center of town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.3599721,48.0806788</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Chambery</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Chambery" class="mw-redirect" title="Chambery">Chambery</a></td><td>Significant car free area</td><td></td><td>Medieval quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>5.9209874,45.5667045</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Montpellier</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Montpellier" title="Montpellier">Montpellier</a></td><td>Many car free streets</td><td>11,000 in the medieval quarter</td><td>Center of medieval university town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>3.8794455,43.608176</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>La Rochelle</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/La_Rochelle" title="La Rochelle">La Rochelle</a></td><td>car free area and anti-car policies</td><td>80,000 (entire city)</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.1536397,46.1581013</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tours</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tours" title="Tours">Tours</a></td><td>Several blocks of the medieval old town are restricted to pedestrians only</td><td></td><td>Old medieval center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>0.6888514,47.3902942</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Bordeaux</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Bordeaux" title="Bordeaux">Bordeaux</a></td><td>4&#160;km of streets</td><td></td><td>Unknown; morning truck deliveries permitted; limited car access for residents</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-0.576144,44.8373682</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Sarlat</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Sarlat" class="mw-redirect" title="Sarlat">Sarlat</a></td><td>Old part of city</td><td></td><td>Reportedly car free and pedestrian friendly except for central main street</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>1.2150151,44.8912612</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lauzerte</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lauzerte" title="Lauzerte">Lauzerte</a></td><td>Place des Cornieres</td><td></td><td>Allegedly car free and pedestrian only except some do not take any notice</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>1.1392247,44.2552578</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Yvoire</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Yvoire" title="Yvoire">Yvoire</a></td><td>Old part of city</td><td></td><td>Medieval quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.3271932,46.3696541</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Freiburg im Breisgau</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Freiburg" class="mw-redirect" title="Freiburg">Freiburg</a> im Breisgau</td><td>Large car free center</td><td>City 200,000; car free areas perhaps 10,000</td><td>Medieval university town; a very small amount of car traffic is permitted on some streets; trams provide access</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.8537668,47.9971865</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Freiburg im Breisgau</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Freiburg" class="mw-redirect" title="Freiburg">Freiburg</a> im Breisgau</td><td><a href="/wiki/Vauban_(Freiburg)" class="mw-redirect" title="Vauban (Freiburg)">Vauban</a> district</td><td>5,000</td><td>New district converted from a military base; car parking distributed, trams provide access</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.8537668,47.9971865</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Freiburg im Breisgau</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Freiburg" class="mw-redirect" title="Freiburg">Freiburg</a> im Breisgau</td><td><a href="/wiki/Rieselfeld" title="Rieselfeld">Rieselfeld</a> district</td><td>10,000</td><td>Car parking distributed, trams provide access</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.8537668,47.9971865</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Erlangen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Erlangen" title="Erlangen">Erlangen</a></td><td>Former US-Army area/Hartmannstrasse</td><td>some 2.000</td><td>Car parking concentrated in some multi storey car parks</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.0063,49.599937</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Erlangen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Erlangen" title="Erlangen">Erlangen</a></td><td>Bonhoefferweg-Siedlung</td><td>some 200</td><td>Car parking outside the residential area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.0063,49.599937</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Nürnberg</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/N%C3%BCrnberg" class="mw-redirect" title="Nürnberg">Nürnberg</a></td><td>9&#160;km of car free streets</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.08048,49.45052</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Munich</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Munich" title="Munich">Munich</a></td><td>7&#160;km of car free streets</td><td></td><td><a href="http://mo.st/public/demosites/demosite.phtml" class="external text" rel="nofollow">id=108 information</a></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.5801863,48.1391265</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Stuttgart</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Stuttgart" title="Stuttgart">Stuttgart</a></td><td>6.9&#160;km of car free streets</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.1807688,48.7771056</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lindau</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lindau" title="Lindau">Lindau</a></td><td>Historic center</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.690238,47.554363</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rothenburg ob der Tauber</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Rothenburg_ob_der_Tauber" title="Rothenburg ob der Tauber">Rothenburg ob der Tauber</a></td><td></td><td>13,000</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.1785292,49.3805044</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wittenberg (Gartenstadt Piesteritz)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.br-online.de/bayern/himmel/bauen/2000/1126.html" class="external text" rel="nofollow">Wittenberg (Gartenstadt Piesteritz)</a></td><td></td><td>1,200</td><td>Development ca. 1915; newly carfree (1994--1999)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.62419,51.873051</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Nürnberg - Langwasser</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/N%C3%BCrnberg" class="mw-redirect" title="Nürnberg">Nürnberg</a> - Langwasser</td><td></td><td>3,180</td><td>New development (1978-1987)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.128755,49.410418</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hamburg (Stadthaus Schlump)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Hamburg" title="Hamburg">Hamburg</a> (Stadthaus Schlump)</td><td>Small</td><td>45 dwelling units</td><td>car free mixed-use conversion of an old hospital</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.9921962,53.5534074</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hamburg (Saarlandstraße)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.autofreieswohnen.de/web/saarland.html" class="external text" rel="nofollow">Hamburg (Saarlandstraße)</a></td><td></td><td>210 dwellings</td><td>New development (2000)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.0322982,53.5925091</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Bremen (Grünenstraße)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Bremen_(city)" class="mw-redirect" title="Bremen (city)">Bremen</a> (Grünenstraße)</td><td>800 m²</td><td>23 dwellings</td><td>New development</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.797001,53.074511</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tübingen (French Quarter)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/T%C3%BCbingen" title="Tübingen">Tübingen</a> (French Quarter)</td><td></td><td></td><td>Some parts of redevelopment car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-90.0629989,29.9595843</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tübingen (converted military base)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/T%C3%BCbingen" title="Tübingen">Tübingen</a> (converted military base)</td><td></td><td>6000 residents, 2000 jobs</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.052098,48.522904</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Munich - Kolumbusplatz(Haidhausen)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.wohnen-ohne-auto.de/projekte.htm" class="external text" rel="nofollow">Munich - Kolumbusplatz</a>(Haidhausen)</td><td></td><td>40 dwellings</td><td>New development (near downtown)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.5767811,48.11899</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Munich (Messestadt Riem)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.wohnen-ohne-auto.de/projekte.htm" class="external text" rel="nofollow">Munich (Messestadt Riem)</a></td><td></td><td>41 dwellings</td><td>car free part of a larger new development</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.7037225,48.1333602</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Münster (Geist) Gartensiedlung Weissenburg</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/M%C3%BCnster" title="Münster">Münster</a> (Geist) <a href="http://www.gartensiedlung-weissenburg.de" class="external text" rel="nofollow">Gartensiedlung Weissenburg</a></td><td></td><td>184 dwellings</td><td>New development (2001)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.628496,51.964711</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hahnenklee-Bockswiese (Harz)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.hahnenklee.de/deutsch/willkommen.htm" class="external text" rel="nofollow">Hahnenklee-Bockswiese</a> (Harz)</td><td>Most of town</td><td>2,500</td><td>Town in the Harz mountain area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.338263,51.86272</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Helgoland</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Helgoland" class="mw-redirect" title="Helgoland">Helgoland</a></td><td>Entire island</td><td>1650</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.8863887,54.1830721</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Baltrum</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Baltrum" title="Baltrum">Baltrum</a></td><td>Entire island</td><td>510</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.377205,53.728709</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Spiekeroog</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Spiekeroog" title="Spiekeroog">Spiekeroog</a></td><td>Entire island</td><td>730</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.6937222,53.7701408</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Langeoog</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Langeoog" title="Langeoog">Langeoog</a></td><td>Entire island</td><td>1970</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.4808418,53.7458922</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wangerooge</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Wangerooge" title="Wangerooge">Wangerooge</a></td><td>Entire island</td><td>1180</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.9004975,53.78812</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Juist</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Juist" title="Juist">Juist</a></td><td>Entire island</td><td>1790</td><td>North Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.0000456,53.6782835</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hiddensee</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Hiddensee" title="Hiddensee">Hiddensee</a></td><td>Entire island</td><td>1200</td><td>Baltic Sea Island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>13.1057352,54.550537</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rerik (Wustrow peninsula)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.awosano.de/ffdstart.htm" class="external text" rel="nofollow">Rerik</a> (Wustrow peninsula)</td><td></td><td>69 houses</td><td>Largely undeveloped area on a Baltic Sea Peninsula; will probably become less car free as it develops</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.55,54.0666667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Niederrathen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/w/index.php?title=Niederrathen&amp;action=edit&amp;redlink=1" title="Niederrathen (page does not exist)" class="new">Niederrathen</a></td><td>Entire village</td><td>500</td><td>Village in Saxony</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>14.08258,50.958821</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moritzdorf (Sellin)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.wild-east.de/meckpom/ruegen/sellin/moritzdorf" class="external text" rel="nofollow">Moritzdorf</a> (Sellin)</td><td>Entire village</td><td></td><td>Village on the island of Rügen</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>13.6840418,54.3524239</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lechbruck am See</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lechbruck_am_See" class="mw-redirect" title="Lechbruck am See">Lechbruck am See</a></td><td>resort facilities</td><td></td><td>Small part of village in Bavaria (car allowed on Saturday)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.7949982,47.7015828</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hayingen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Hayingen" title="Hayingen">Hayingen</a></td><td>Entire village</td><td>105 houses</td><td>Village in Swabia</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.4782541,48.2750948</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Hydra Island</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Hydra,_Saronic_Islands" title="Hydra, Saronic Islands">Hydra Island</a></td><td>Entire island (50&#160;km²)</td><td>3,000</td><td>No motorized vehicles on the entire island</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-157.0166667,56.7425</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lindos/Rhodes</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Lindos" title="Lindos">Lindos</a>/Rhodes</td><td>Entire Town</td><td></td><td>Motorized traffic impossible due to narrow streets</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>28.085699,36.090371</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mount Athos</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Mount_Athos" title="Mount Athos">Mount Athos</a></td><td>Entire Peninsula</td><td>1,400</td><td>Motorized traffic of non residents is prohibited. Local traffic is extremely limited with only some vehicles used by the monastic community for essential communication, and transportation needs</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>24.245046,40.256566</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Spetses Island</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Spetses" title="Spetses">Spetses Island</a></td><td>Town only</td><td>4,000 (entire island)</td><td>car free, possibly with some violations</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>23.1322437,37.2625973</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Downtown Athens</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>Downtown <a href="/wiki/Athens" title="Athens">Athens</a></td><td>Historic centre</td><td>ca. 750,000 (whole municipality)</td><td>While designated car free, the ban is apparently widely ignored</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>23.716647,37.97918</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>The city of Rhodes</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>The city of <a href="/wiki/Rhodes" title="Rhodes">Rhodes</a></td><td>Medieval centre</td><td>ca. 50,000 (entire city)</td><td>Motor traffic within the medieval city and mainly near the <a href="/wiki/Knights_Hospitaller" title="Knights Hospitaller">Knights Hospitaller</a> <a href="/wiki/Grand_master_(order)" class="mw-redirect" title="Grand master (order)">Grand Master</a>'s palace is limited. Limitations are most often ignored, especially by youngsters on scooters.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>28.227007,36.443235</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Aristotle Street, Thessaloniki</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>Aristotle Street, <a href="/wiki/Thessaloniki" title="Thessaloniki">Thessaloniki</a></td><td>From Aristotle Square to Ancient Agora Square</td><td></td><td>Car free except for cross streets, ignored by motorbikes.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>22.944607,40.63935</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Margaret Island, Budapest</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Margaret_Island" title="Margaret Island">Margaret Island</a>, <a href="/wiki/Budapest" title="Budapest">Budapest</a></td><td>Entire island</td><td></td><td>Entry by cars forbidden except for a single bus line and taxis; service traffic of local stores and restaurants are allowed to enter, plus the large trucks carrying bottled mineral water from the Pepsi mineral water bottling plant on the island.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>19.0497087,47.5260708</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Venice</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Venice" title="Venice">Venice</a></td><td>Entire city, except at the bus station square</td><td>Estimated at 70,000</td><td>Medieval city, today highly focused on tourism; transport on foot or by water</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.3387844,45.4343363</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Siena</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Siena" title="Siena">Siena</a></td><td>Entire city</td><td>Perhaps 30,000</td><td>Not entirely car free but most streets have very little traffic</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.3305135,43.3186614</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Cinque Terre
+(5 towns on the Gulf of Genoa)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Cinque_Terre" title="Cinque Terre">Cinque Terre</a><br />
+(5 towns on the Gulf of Genoa)</td><td>Most or all of each town</td><td>Probably a few thousand each</td><td>Some towns are car free, others highly car-moderated</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.9339889,44.4070624</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lipari</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Lipari" title="Lipari">Lipari</a></td><td>Entire village</td><td>10.763</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>14.9540176,38.4673831</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Chamois</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Chamois,_Italy" title="Chamois, Italy">Chamois</a></td><td>Entire village</td><td>96</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-91.7696191,38.6753205</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Monte Isola</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Monte_Isola" title="Monte Isola">Monte Isola</a></td><td>Entire village</td><td>1.768</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.0868954,45.7105447</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Florence</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Florence" title="Florence">Florence</a></td><td>Several streets near Piazza San Lorenzo</td><td></td><td>Market area of the old city</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.2569013,43.7687324</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rome</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Rome" title="Rome">Rome</a></td><td>Several streets west of the Vatican</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.4823243,41.8954656</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Parma</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Parma" title="Parma">Parma</a></td><td>Small area in the city center, probably 6 to 10 streets</td><td>Unknown, probably a few thousand</td><td>Probably some delivery trucks permitted during limited hours</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>10.3295478,44.8078657</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Naples</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Naples" title="Naples">Naples</a></td><td>Small car free area at center</td><td></td><td>Shopping area in downtown</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-81.7948103,26.1420358</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Milan</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Milan" title="Milan">Milan</a></td><td>Small area near cathedral</td><td></td><td>Wide streets completely filled with pedestrians after work</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.1881408,45.4636889</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ferrara</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Ferrara" title="Ferrara">Ferrara</a></td><td>The medieval center has car free streets and is over all "car-lite"</td><td></td><td>Heavy bike use</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.6204396,44.8378942</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Perugia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Perugia" title="Perugia">Perugia</a></td><td>While the town suffers heavily from cars and traffic, some areas are so narrow that they are car free</td><td></td><td>Medieval hill town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.389172,43.1107009</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Assisi</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Assisi" title="Assisi">Assisi</a></td><td>Much of the town is highly car-moderated</td><td></td><td>Visitors must park at the foot of the hill; some residents' cars are allowed in town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.6175185,43.0701666</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Spoleto</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Spoleto" title="Spoleto">Spoleto</a></td><td>Some parts of the upper old city are car free</td><td></td><td>Pre-medieval hill town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.7384305,42.7453344</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Orta San Giulio</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Orta_San_Giulio" title="Orta San Giulio">Orta San Giulio</a></td><td>Entire town is car free; visitors may park in lots above the town and continue down by foot</td><td>1177</td><td>Medieval village on the shore of Lake Orta in the Piedmont region</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.4198703,45.7989259</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Giethoorn</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Giethoorn" title="Giethoorn">Giethoorn</a></td><td>Entire town</td><td>about 2500</td><td>Transport by canal boat</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.0774187,52.7397012</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Amsterdam GWL project</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Amsterdam" title="Amsterdam">Amsterdam</a> GWL project</td><td>600 unit car free residential area</td><td>About 1500</td><td>Modern architecture on the site of a disused waterworks; some car parking at the edge</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.8909347,52.3738007</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Kalverstraat/Nieuwendijk, Amsterdam</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Kalverstraat" title="Kalverstraat">Kalverstraat</a>/<a href="/wiki/Nieuwendijk" title="Nieuwendijk">Nieuwendijk</a>, Amsterdam</td><td>Long main shopping street with many narrow side streets</td><td>Unknown; primarily commercial</td><td>Shopping district; delivery vehicles allowed in AM</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.8952519,52.3758226</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Delft</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Delft" title="Delft">Delft</a></td><td>Most of the old center</td><td></td><td>Medieval center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>4.3602566,52.0118994</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Groningen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Groningen_(city)" title="Groningen (city)">Groningen</a></td><td>Most of the old city center</td><td>16,551 within the City Centre<sup class="reference" id="cite_ref-2"><a href="#cite_note-2"><span>[</span>3<span>]</span></a></sup></td><td>Much of the City Centre is pedestrianised. The City Centre has no through routes for motor traffic; much of it is pedestrianised</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.5677579,53.2148825</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Kraków</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Krak%C3%B3w" title="Kraków">Kraków</a></td><td>Large car free area around the Old Town Square encircled by a park known as Planty</td><td>5,345 (Old Town in 1998), 780,000 (whole city - 2004)</td><td>Old town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>19.9449799,50.0646501</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Kielce</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Kielce" title="Kielce">Kielce</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>20.6285677,50.8660773</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Łódź</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/%C5%81%C3%B3d%C5%BA" title="Łódź">Łódź</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>19.4559833,51.7592485</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Poznań</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Pozna%C5%84" title="Poznań">Poznań</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>16.9251681,52.406374</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Sopot</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Sopot" title="Sopot">Sopot</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>18.5600956,54.441581</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Suwałki</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Suwa%C5%82ki" title="Suwałki">Suwałki</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>22.9307881,54.1115218</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Toruń</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Toru%C5%84" title="Toruń">Toruń</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>18.5984437,53.0137902</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Warsaw</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Warsaw" title="Warsaw">Warsaw</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>21.0122287,52.2296756</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wrocław</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Wroc%C5%82aw" title="Wrocław">Wrocław</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>17.0385376,51.1078852</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Zakopane</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Zakopane" title="Zakopane">Zakopane</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>19.9495621,49.299181</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Zielona Góra</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Zielona_G%C3%B3ra" title="Zielona Góra">Zielona Góra</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>15.5061862,51.9356214</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Złotów</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Z%C5%82ot%C3%B3w" title="Złotów">Złotów</a></td><td></td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>17.04046,53.36381</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td><a href="/wiki/Lomonosov_Moscow_State_University" title="Lomonosov Moscow State University">Lomonosov Moscow State University</a> campus on <a href="/wiki/Sparrow_Hills" title="Sparrow Hills">Sparrow Hills</a></td><td></td><td>Public transport (includes transit) and professors' cars only</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.617633,55.755786</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td>(Old) <a href="/wiki/Arbat_Street" title="Arbat Street">Arbat_Street</a> is a picturesque pedestrian street</td><td></td><td>Tourist area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.617633,55.755786</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td><a href="/wiki/Luzhniki_Olympic_Complex" title="Luzhniki Olympic Complex">Luzhniki Olympic Complex</a></td><td>about 10000 in non-transit area</td><td>Three areas: walled pedestrian transit area nearby <a href="/wiki/Luzhniki_Metro_Bridge" title="Luzhniki Metro Bridge">Luzhniki Metro Bridge</a> (24 hours access except events), the another walled area open 10 to 22, access most times free of charge, authority area to cars northern to the stadium (northern border is transit road - Khamovnichesky Val) with public transport. In additional, there is a non-transit area nearby to the metro Sportivnaya</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.617633,55.755786</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td><a href="/wiki/Moscow_Kremlin" title="Moscow Kremlin">Moscow Kremlin</a> - UNESCO World Heritage Site, Entire area of walled town</td><td>N/A</td><td>Cars are allowed only durning <a href="/wiki/Parade" title="Parade">parade</a></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.617633,55.755786</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td><a href="/wiki/White_House,_Moscow" title="White House, Moscow">White House, Moscow</a> - after 1993 building zone, pedastrian zone and car zone were divided, transit cars were diverted to embarks, local cars to adjustment streets</td><td>N/A</td><td>for pedastrian zone used impassable to most vehicles area and were walled</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.617633,55.755786</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Óbidos</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/%C3%93bidos,_Portugal" title="Óbidos, Portugal">Óbidos</a></td><td>Entire area of walled town</td><td>Around 3,100</td><td>Medieval walled hill town (now tourist area); only residents permitted to drive into the town, although cars are a nuisance</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-55.5195644,-1.9020444</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Baixa, Lisbon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Baixa" class="mw-redirect" title="Baixa">Baixa</a>, <a href="/wiki/Lisbon" title="Lisbon">Lisbon</a></td><td>One long shopping street, with a few side streets</td><td></td><td>18th C 5-story mixed use</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-9.1378061,38.7109665</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Santarém</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Santar%C3%A9m,_Portugal" title="Santarém, Portugal">Santarém</a></td><td>Most of the streets in the oldest part of town</td><td>64,124</td><td>3 story, old, mixed use area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-8.687075,39.2361817</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Faro</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Faro,_Portugal" title="Faro, Portugal">Faro</a></td><td>Some of the downtown area</td><td>50,000 (whole city)</td><td>6 to 8 old streets that form a small network in the center of town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>12.7135121,8.1934636</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tavira</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tavira" title="Tavira">Tavira</a></td><td>Some of the old downtown</td><td>25,000 (whole city)</td><td>Narrow, winding streets in the old part of town.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-7.6498408,37.1258122</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Évora</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/%C3%89vora" title="Évora">Évora</a></td><td>Most of the old walled city</td><td>8500 (in the walled city)</td><td>Some cars</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-7.9096023,38.570983</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Coimbra</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Coimbra" title="Coimbra">Coimbra</a></td><td>Many small streets</td><td></td><td>Old medieval quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-8.4292014,40.211491</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Viseu</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Viseu" title="Viseu">Viseu</a></td><td>A number of narrow streets in the town center</td><td></td><td>Largely intact medieval city; on Fridays, the entire old center is car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-7.9142793,40.6575445</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Málaga</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/M%C3%A1laga" title="Málaga">Málaga</a></td><td>3,900 m² car free and limited access streets</td><td></td><td>Moorish and XIX century historic center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.4200186,36.7196459</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Seville</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Seville" title="Seville">Seville</a></td><td>Santa Cruz district has many narrow, car free streets</td><td></td><td>Medieval/Renaissance quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-5.9962951,37.38264</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Madrid Puerta del Sol</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Madrid" title="Madrid">Madrid</a> Puerta del Sol</td><td>6 blocks square (limited car access)</td><td></td><td>Busy central area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-3.7035024,40.4170154</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Segovia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Segovia" title="Segovia">Segovia</a></td><td>Large parts of the old, walled city</td><td></td><td>Medieval area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.1192092,40.9494272</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Pontevedra</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Pontevedra" title="Pontevedra">Pontevedra</a></td><td>Large central pedestrian zone</td><td></td><td>Whole old town, narrow streets and small squares. No cars.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-8.648053,42.4336191</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Santiago de Compostela</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Santiago_de_Compostela" title="Santiago de Compostela">Santiago de Compostela</a></td><td>Large central pedestrian zone</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-8.5463034,42.8804471</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Barri Gòtic, Barcelona</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Barri_G%C3%B2tic" class="mw-redirect" title="Barri Gòtic">Barri Gòtic</a>, <a href="/wiki/Barcelona" title="Barcelona">Barcelona</a></td><td>A number of car free streets, others car-light</td><td>27,946<sup class="reference" id="cite_ref-3"><a href="#cite_note-3"><span>[</span>4<span>]</span></a></sup></td><td>Medieval center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.1769444,41.3827778</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Girona</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Girona" title="Girona">Girona</a></td><td>Rambla (promenade and shopping street) and network of narrow residential streets</td><td></td><td>Historic centre</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>2.8236999,41.9817957</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Granada</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Granada" title="Granada">Granada</a></td><td>Albaicin neighborhood (limited car access on a few streets)</td><td></td><td>Historic Moorish quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-3.5979291,37.1764874</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Valladolid</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Valladolid" title="Valladolid">Valladolid</a></td><td><a href="/wiki/File:Valladolid-plaza.jpg" title="File:Valladolid-plaza.jpg">Central square</a> and surrounding streets.</td><td></td><td>Historic centre, although most buildings are now modern.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.7283877,41.6529473</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Gamla stan, Stockholm (Old Town)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Gamla_stan" title="Gamla stan">Gamla stan</a>, <a href="/wiki/Stockholm" title="Stockholm">Stockholm</a> (Old Town)</td><td>Most of the old heart (ca. 0.3&#160;km²)</td><td>3000</td><td>Oldest part of the city; medieval area; low traffic in central parts of the Old Town during part of the day, AM deliveries allowed and taxis allowed 24 h; there is no supervision and no control so in reality the medieval city is not essentially car free.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>18.0703388,59.3250662</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Malmö</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Malm%C3%B6" title="Malmö">Malmö</a></td><td>Large pedestrian precinct</td><td></td><td>City center; further expansion planned</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>13.0013029,55.6033306</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Växjö, Sweden</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/V%C3%A4xj%C3%B6,_Sweden" class="mw-redirect" title="Växjö, Sweden">Växjö, Sweden</a></td><td>Entire city center</td><td></td><td>car free district in <a href="http://www.vaxjo.se/english" class="external text" rel="nofollow">fossil-fuel reduced city (external link)</a></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>14.8091799,56.87697</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Jakriborg</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Jakriborg" title="Jakriborg">Jakriborg</a></td><td>Entire village</td><td>800 - 2000</td><td>Newbuilt suburb/village in old style, connected to Malmö and <a href="/wiki/Lund" title="Lund">Lund</a> via rail.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>13.1354113,55.6748602</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Southern Göteborg Archipelago</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Southern_G%C3%B6teborg_Archipelago" class="mw-redirect" title="Southern Göteborg Archipelago">Southern Göteborg Archipelago</a></td><td><a href="http://www3.goteborg.com/upload/kartor/flash/kartor_eng/skargarden/ssskarg.swf" class="external text" rel="nofollow">Archipelago</a> including <a href="/w/index.php?title=Vr%C3%A5ng%C3%B6_Island&amp;action=edit&amp;redlink=1" title="Vrångö Island (page does not exist)" class="new">Vrångö</a>, <a href="/wiki/Br%C3%A4nn%C3%B6_Island" class="mw-redirect" title="Brännö Island">Brännö</a>, <a href="/w/index.php?title=Styrs%C3%B6_Island&amp;action=edit&amp;redlink=1" title="Styrsö Island (page does not exist)" class="new">Styrsö</a>, and <a href="/w/index.php?title=Varg%C3%B6_Island&amp;action=edit&amp;redlink=1" title="Vargö Island (page does not exist)" class="new">Vargö</a></td><td>5,000 permanent, another 6,000 summer</td><td>West of <a href="/wiki/Gothenburg" title="Gothenburg">Gothenburg</a></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.7833333,57.6166667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Zermatt</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Zermatt" title="Zermatt">Zermatt</a></td><td>Entire town</td><td>5687</td><td>car free Alpine resort with prototype "Utility Area" at the entrance; slow electric taxis and freight vehicles used, although these are sometimes driven at higher speeds</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.746026,46.019338</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Bettmeralp</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Bettmeralp" title="Bettmeralp">Bettmeralp</a></td><td>Entire town</td><td></td><td>Alpine resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.06254,46.390216</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Braunwald</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Braunwald" title="Braunwald">Braunwald</a></td><td>Entire town</td><td>398</td><td>Alpine resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.997824,46.938593</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Riederalp</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Riederalp" title="Riederalp">Riederalp</a></td><td>Entire town</td><td>555</td><td>Alpine resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.0253206,46.377363</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rigi</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Rigi" title="Rigi">Rigi</a></td><td>Entire town</td><td></td><td>Alpine resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>58.724751,35.77887</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Saas-Fee</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Saas-Fee" title="Saas-Fee">Saas-Fee</a></td><td>Entire town</td><td>1607</td><td>Alpine resort; small electric utility vehicles</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.9346462,46.1133673</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Stoos</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Stoos" title="Stoos">Stoos</a></td><td>Entire town</td><td></td><td>Alpine resort; small electric utility vehicles, mainly from the resorts hotels.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.6646903,46.9839098</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wengen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Wengen,_Switzerland" class="mw-redirect" title="Wengen, Switzerland">Wengen</a></td><td>Entire town</td><td>1400</td><td>Alpine resort</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>11.1134295,49.0735042</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Zürich</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Z%C3%BCrich" title="Zürich">Zürich</a></td><td>Large parts of the old town</td><td></td><td>car free medieval urban core</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.5380326,47.3690239</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lausanne</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lausanne" title="Lausanne">Lausanne</a></td><td>Large parts of the old town</td><td></td><td>The lower mediaeval part of the old town is car free. Cars are allowed but uncommon in the upper ancient part. Taxis are allowed.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.6321213,46.5195819</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Geneva</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Geneva" title="Geneva">Geneva</a></td><td>10 streets</td><td>10,000</td><td>car free areas in the heart</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.1399589,46.2038099</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Basel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Basel" title="Basel">Basel</a></td><td>Parts of the medieval town are car free</td><td></td><td>The city is heavily dependent on an excellent tram system and most of the center city is highly car moderated if not car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.5806107,47.5596145</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>St. Gallen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/St._Gallen" title="St. Gallen">St. Gallen</a></td><td>Old center</td><td></td><td>car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.376052,47.426484</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Neuchâtel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Neuch%C3%A2tel" title="Neuchâtel">Neuchâtel</a></td><td>Old center</td><td></td><td>car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>6.930921,46.992006</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Appenzell</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Appenzell_(town)" title="Appenzell (town)">Appenzell</a></td><td>Old center</td><td></td><td>car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>9.408826,47.3282986</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Gstaad</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Gstaad" title="Gstaad">Gstaad</a></td><td>Village center</td><td></td><td>car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.28637,46.472927</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Gruyere</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Gruy%C3%A8re_(district)" title="Gruyère (district)">Gruyere</a></td><td>Village center</td><td></td><td>Reportedly significant car free area</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>145.44131,-37.746276</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rapperswil</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Rapperswil" title="Rapperswil">Rapperswil</a></td><td>Medieval center</td><td></td><td>car free center</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.8184413,47.2266055</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Brig</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Brig,_Switzerland" title="Brig, Switzerland">Brig</a></td><td>Perhaps 10 blocks in downtown</td><td></td><td>Old part of the city, mixed use</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.0132213,46.2933164</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Winterthur</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Winterthur" title="Winterthur">Winterthur</a></td><td>Historic center</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.72616,47.499879</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lugano</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lugano" title="Lugano">Lugano</a></td><td>Most of the old quarter</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>8.9533974,46.0035906</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mürren</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/M%C3%BCrren" title="Mürren">Mürren</a></td><td>Entire town</td><td>450</td><td>Alpine resort; some utility traffic</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.893782,46.559748</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Gimmelwald</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Gimmelwald" title="Gimmelwald">Gimmelwald</a></td><td>Entire town</td><td>130</td><td>Small village</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.8926695,46.5469523</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Bern - Halen</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="http://www.halen.ch/4613.html" class="external text" rel="nofollow">Bern - Halen</a></td><td>79 apartments</td><td></td><td>Terraced neighborhood; built 1961; parking at edge</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>7.358678,46.904293</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Cambridge</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Cambridge" title="Cambridge">Cambridge</a></td><td>City centre and university campus</td><td>Several thousand</td><td>University town with heavy tourism; cars banned most of the day from centre</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-71.1056079,42.3750969</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Oxford</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Oxford" title="Oxford">Oxford</a></td><td>Areas in city centre</td><td></td><td>Medieval university town. Cornmarket Street, Radliffe Square surrounding the Radcliffe Camera and University Church, and Brasenose Lane are pedestrian only; Queen Street is bus only; many surrounding streets have restricted vehicular access</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.2558243,51.7522764</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Salisbury</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Salisbury" title="Salisbury">Salisbury</a></td><td>City centre and cathedral close</td><td>115,800</td><td>Large section of town centre is car free, including the Cathedral Close</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.7976263,51.0673989</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Edinburgh</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Edinburgh" title="Edinburgh">Edinburgh</a></td><td>Slateford Green car free development</td><td></td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-3.1875359,55.9501755</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/York" title="York">York</a></td><td>Several vibrant alley ways in the centre, including The Shambles</td><td>183,100</td><td>Streets too narrow for cars</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.0822855,53.9577018</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Leeds,</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Leeds" title="Leeds">Leeds</a>,</td><td>Large part of the city centre centred around <a href="/wiki/Briggate" class="mw-redirect" title="Briggate">Briggate</a></td><td>715,200</td><td>Pedestrian precinct (Access for delivery to some areas allowed between 2300 and 0600 hours).</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.54911,53.7996374</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lincoln</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Lincoln,_Lincolnshire" title="Lincoln, Lincolnshire">Lincoln</a></td><td>Several cobbled streets around the Cathedral</td><td>86,000</td><td>car free area near the centre</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-96.681679,40.806862</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Isles of Scilly</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Isles_of_Scilly" title="Isles of Scilly">Isles of Scilly</a></td><td>Group of islands off Land's End</td><td>Combined population of 2000</td><td>Island of Tresco is car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-6.298672,49.925002</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Clovelly</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Clovelly" title="Clovelly">Clovelly</a></td><td>Village in North Devon</td><td>~300</td><td>Entirely car-free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>151.262021,-33.912639</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Shrewsbury</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Shrewsbury" title="Shrewsbury">Shrewsbury</a></td><td>Several streets in town centre</td><td>72,000</td><td>Medieval town enclosed within loop of <a href="/wiki/River_Severn" title="River Severn">River Severn</a>. Pride Hill entirely motor-vehicle free except limited access for loading in mornings. The Square, Fish St (2m width restriction), Butcher Row allowed for access and delivery only. 2009 closure of Music Hall removed much access/delivery traffic from The Square. <a href="/wiki/Grope_Lane" class="mw-redirect" title="Grope Lane">Grope Lane</a> and the "shuts" too narrow for traffic.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-2.7543211,52.7081738</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Prague, Czech Republic</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Prague" title="Prague">Prague</a>, <a href="/wiki/Czech_Republic" title="Czech Republic">Czech Republic</a></td><td>Large car free area starting at Old Town Square and extending across the river</td><td></td><td>Medieval quarter</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>14.4204598,50.0878114</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tábor, Czech Republic</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/T%C3%A1bor" title="Tábor">Tábor</a>, <a href="/wiki/Czech_Republic" title="Czech Republic">Czech Republic</a></td><td>"Modest network of car free streets"</td><td></td><td>Old town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>14.6577921,49.4141617</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Dubrovnik, Croatia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Dubrovnik" title="Dubrovnik">Dubrovnik</a>, <a href="/wiki/Croatia" title="Croatia">Croatia</a></td><td>The old walled city</td><td></td><td>Nearly car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>18.1064513,42.641833</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rovinj, Croatia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Rovinj" title="Rovinj">Rovinj</a>, <a href="/wiki/Croatia" title="Croatia">Croatia</a></td><td>The old town is reported to be largely or entirely car free</td><td></td><td>Undoubtedly medieval</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>13.6383512,45.0808406</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Arbat Street, Moscow</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Arbat_Street" title="Arbat Street">Arbat Street</a>, <a href="/wiki/Moscow" title="Moscow">Moscow</a></td><td>Small district</td><td></td><td>Old area just outside the historic center.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>37.5961111,55.7511111</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Vilnius, Lithuania</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Vilnius" title="Vilnius">Vilnius</a>, <a href="/wiki/Lithuania" title="Lithuania">Lithuania</a></td><td>Large car free area reported</td><td></td><td>One of the largest surviving medieval quarters in Europe</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>25.2800243,54.6893865</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Kaunas, Lithuania</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Kaunas" title="Kaunas">Kaunas</a>, <a href="/wiki/Lithuania" title="Lithuania">Lithuania</a></td><td>Laisves Aleja</td><td></td><td>A double tree lined five block pedestrian shopping street car free other than intersections</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>23.8924264,54.8968721</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Riga, Latvia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Riga" title="Riga">Riga</a>, <a href="/wiki/Latvia" title="Latvia">Latvia</a></td><td>Old town</td><td></td><td>The walled old town is nearly car free, requiring enough permits and entrance fees for motor vehicles that cars are seldom seen</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>24.1048525,56.9465346</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tallinn, Estonia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tallinn" title="Tallinn">Tallinn</a>, <a href="/wiki/Estonia" title="Estonia">Estonia</a></td><td>"Modest network of car free streets"</td><td></td><td>Old town</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>24.7544715,59.4388619</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Büyükada Island, Istanbul, Turkey</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/B%C3%BCy%C3%BCkada_Island" class="mw-redirect" title="Büyükada Island">Büyükada Island</a>, <a href="/wiki/Istanbul" title="Istanbul">Istanbul</a>, <a href="/wiki/Turkey" title="Turkey">Turkey</a></td><td>One of the nine Marmara Sea islands, resort area</td><td>1500 ( )</td><td>Almost entirely car free</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>29.1222222,40.8575</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Heybeliada, Istanbul, Turkey</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Heybeliada" title="Heybeliada">Heybeliada</a>, <a href="/wiki/Istanbul" title="Istanbul">Istanbul</a>, <a href="/wiki/Turkey" title="Turkey">Turkey</a></td><td>Second largest of the Princes' Islands in the Sea of Marmara, near Istanbul</td><td>3000</td><td>To prevent the island from becoming polluted, the only motorized vehicles permitted on the island are service vehicles (ambulance, fire, police, and the like), the only forms of transport are by foot, horse and buggy and service transport.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>29.089309,40.876156</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Kotor, Montenegro</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Kotor" title="Kotor">Kotor</a>, <a href="/wiki/Montenegro" title="Montenegro">Montenegro</a></td><td>The old town is car free.</td><td>23,481</td><td>The old Mediterranean port of Kotor, surrounded by an impressive city wall, is very well preserved and protected by <a href="/wiki/UNESCO" title="UNESCO">UNESCO</a>.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>18.7630664,42.418328</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mamaia, Romania</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Mamaia" title="Mamaia">Mamaia</a>, <a href="/wiki/Romania" title="Romania">Romania</a></td><td>About 5 km car free esplanade on the Black Sea shore.</td><td></td><td>The biggest beach summer resort on Romanian <a href="/wiki/Black_Sea" title="Black Sea">Black Sea</a> shore featuring shops, art galleries, cafes, festivals, restaurants, beach bars, night clubs, pools.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>28.644321,44.21147</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Calgary, Alberta</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Calgary,_Alberta" class="mw-redirect" title="Calgary, Alberta">Calgary</a>, <a href="/wiki/Alberta" title="Alberta">Alberta</a></td><td>7th &amp; 8th Avenue Malls</td><td>Non-Residential</td><td>7th Ave. is a transit mall; 8th Ave. is a pedestrian mall for several blocks that offers some retailers selling coffee, food, drinks and tourist merchandise.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-114.062438,51.055149</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Toronto Islands</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Toronto_Islands" title="Toronto Islands">Toronto Islands</a></td><td>Several car free islands just off downtown</td><td>700</td><td>Urban park and ecological community. Accessible by ferry or private boat from downtown Toronto. Bicycles are permitted on ferries.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-79.3782333,43.6209033</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Toronto, Ontario</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Toronto" title="Toronto">Toronto</a>, <a href="/wiki/Ontario" title="Ontario">Ontario</a></td><td><a href="/wiki/Distillery_District" title="Distillery District">Distillery District</a></td><td></td><td>Historic industrial district; red brick, art galleries, shops, cafes, residences, various festivals, breweries, distilleries, winemaking, pubs, fresh beer, bicycle parking, adjacent to Don Valley bicycle trail network through the city.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-79.386755,43.670233</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Toronto, Ontario</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Toronto" title="Toronto">Toronto</a>, <a href="/wiki/Ontario" title="Ontario">Ontario</a></td><td><a href="/wiki/Outer_Harbour_East_Headland" class="mw-redirect" title="Outer Harbour East Headland">Outer Harbour East Headland</a> (<a href="/wiki/Leslie_Street_Spit" title="Leslie Street Spit">Leslie Street Spit</a>)</td><td>0</td><td>Wilderness on a 5&#160;km-long man-made peninsula area near downtown. Access by bicycle, pedestrian or boat.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-79.386755,43.670233</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ottawa, Ontario</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Ottawa,_Ontario" class="mw-redirect" title="Ottawa, Ontario">Ottawa</a>, <a href="/wiki/Ontario" title="Ontario">Ontario</a></td><td><a href="/wiki/Sparks_Street" title="Sparks Street">Sparks Street</a></td><td>Non-residential</td><td>6-block shopping street 1 block south of Canadian Parliament Building.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-75.697933,45.423494</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mont-Tremblant, Quebec</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Mont_Tremblant_Resort" title="Mont Tremblant Resort">Mont-Tremblant</a>, <a href="/wiki/Quebec" title="Quebec">Quebec</a></td><td></td><td></td><td>Ski resort built as an Auto-Free European-style village.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.622881,46.195505</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Quebec City, Quebec</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Quebec_City,_Quebec" class="mw-redirect" title="Quebec City, Quebec">Quebec City</a>, <a href="/wiki/Quebec" title="Quebec">Quebec</a></td><td><a href="/w/index.php?title=Vieux_Quebec&amp;action=edit&amp;redlink=1" title="Vieux Quebec (page does not exist)" class="new">Vieux Quebec</a></td><td>528,595</td><td>Many streets in the oldest part of Quebec City are car free as is Rue Saint-Jean for most of the day during the tourist season.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-71.215223,46.812754</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Digby Island, British Columbia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/w/index.php?title=Digby_Island&amp;action=edit&amp;redlink=1" title="Digby Island (page does not exist)" class="new">Digby Island</a>, <a href="/wiki/British_Columbia" title="British Columbia">British Columbia</a></td><td><a href="/wiki/Dodge_Cove,_British_Columbia" title="Dodge Cove, British Columbia">Dodge Cove</a></td><td>100</td><td>Artisan and Commuter Community on an island near Prince Rupert, BC</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-130.4233874,54.2945969</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>St. John's, Newfoundland and Labrador</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/St._John%27s" class="mw-redirect" title="St. John's">St. John's</a>, <a href="/wiki/Newfoundland_and_Labrador" title="Newfoundland and Labrador">Newfoundland and Labrador</a></td><td><a href="/wiki/George_Street,_St._John%27s" title="George Street, St. John's">George Street</a></td><td></td><td>An historic street dotted with pubs</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-52.701129,47.576727</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Charlottetown, Prince Edward Island</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Charlottetown" title="Charlottetown">Charlottetown</a>, <a href="/wiki/Prince_Edward_Island" title="Prince Edward Island">Prince Edward Island</a></td><td><a href="/w/index.php?title=Victoria_Row&amp;action=edit&amp;redlink=1" title="Victoria Row (page does not exist)" class="new">Victoria Row</a></td><td>32,174</td><td>Small street next to a library, with cafes, restaurants and an art gallery, which is pedestrianized in the summer. Street is not totally closed to vehicles, and still sees a lot of deliveries and local traffic.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-63.126521,46.235419</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Whistler, British Columbia}</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Whistler" title="Whistler">Whistler</a>, <a href="/wiki/British_Columbia" title="British Columbia">British Columbia</a>}</td><td><a href="/wiki/Whistler_Village" class="mw-redirect" title="Whistler Village">Whistler Village</a></td><td>9,248</td><td>Ski Resort built as an Auto-Free European-style Village.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-122.959146,50.115248</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Guadalajara, Jalisco</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Guadalajara,_Jalisco" title="Guadalajara, Jalisco">Guadalajara</a>, <a href="/wiki/Jalisco" title="Jalisco">Jalisco</a></td><td>Zona Peatonal, Downtown</td><td>3,000,000</td><td>15 streets dedicated to pedestrians. Surrounded by civic, touristic and commercial areas</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-103.343803,20.67359</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Guanajuato, Guanajauato</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Guanajuato,_Guanajuato" title="Guanajuato, Guanajuato">Guanajuato</a>, <a href="/w/index.php?title=Guanajauato&amp;action=edit&amp;redlink=1" title="Guanajauato (page does not exist)" class="new">Guanajauato</a></td><td>Most of the historic town</td><td>70,798</td><td>One main narrow street running through town; the few remaining streets run underground</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-101.2614554,21.0192657</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Parismina, Limon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Parismina" title="Parismina">Parismina</a>, Limon</td><td>Entire Village</td><td>600</td><td>Small coastal village has no paved roads and one tractor for trash collection.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-83.3488827,10.3074285</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Río Piedras</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>Río Piedras</td><td>Zona Peatonal Paseo de Diego</td><td>1,000,000 / Part of city</td><td>Working class neighbourhood, about 1&#160;km dedicated to pedestrians, commercial areas, served by new automated <a href="/wiki/Tren_Urbano" title="Tren Urbano">Tren Urbano</a> nearby <a href="/wiki/University_of_Puerto_Rico,_Rio_Piedras_Campus" title="University of Puerto Rico, Rio Piedras Campus">University of Puerto Rico</a> and <a href="/wiki/San_Juan_Botanical_Garden" title="San Juan Botanical Garden">Botanical Gardens</a>.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-66.049888,18.397448</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Old San Juan, Puerto Rico</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Old_San_Juan,_Puerto_Rico" title="Old San Juan, Puerto Rico">Old San Juan, Puerto Rico</a></td><td>(<i>In planning stages</i>) large portion of historic district</td><td>Aprox 7,000</td><td>Narrow <a href="/wiki/Cobblestone" title="Cobblestone">cobblestone</a> streets, buildings and numerous public plazas and churches which date back to the 16th and 17th century. A modern tramway line to serve the area is in the planning stages.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-66.1073214,18.466378</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>North Carolina</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/North_Carolina" title="North Carolina">North Carolina</a></td><td bgcolor="#88DD88"><a href="/wiki/Bald_Head_Island" class="mw-redirect" title="Bald Head Island">Bald Head Island</a></td><td>entire Island</td><td>173</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-79.0192997,35.7595731</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wisconsin</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Wisconsin" title="Wisconsin">Wisconsin</a></td><td bgcolor="#88DD88"><a href="/wiki/Rock_Island" title="Rock Island">Rock Island</a></td><td>entire Island</td><td>0</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-88.7878678,43.7844397</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Maine</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Maine" title="Maine">Maine</a></td><td bgcolor="#88DD88"><a href="/wiki/Monhegan_Island" class="mw-redirect" title="Monhegan Island">Monhegan Island</a></td><td>entire Island</td><td>75 permanent residents</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-69.4454689,45.253783</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Michigan</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Michigan" title="Michigan">Michigan</a></td><td bgcolor="#88DD88"><a href="/wiki/Mackinac_Island" title="Mackinac Island">Mackinac Island</a></td><td>entire Island</td><td>600 permanent residents</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-85.6023643,44.3148443</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Michigan</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Michigan" title="Michigan">Michigan</a></td><td bgcolor="#88DD88"><a href="/wiki/Russell_Island_(Michigan)" title="Russell Island (Michigan)">Russell Island</a></td><td>entire Island</td><td>150 cottages</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-85.6023643,44.3148443</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Virginia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Virginia" title="Virginia">Virginia</a></td><td bgcolor="#88DD88"><a href="/wiki/Tangier_Island" title="Tangier Island">Tangier Island</a></td><td>entire Island</td><td>604</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-78.6568942,37.4315734</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Arizona</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Arizona" title="Arizona">Arizona</a></td><td bgcolor="#88DD88"><a href="/wiki/Arcosanti" title="Arcosanti">Arcosanti</a></td><td>entire Town</td><td>100</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-111.0937311,34.0489281</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td bgcolor="#DDDD88"><a href="/wiki/Santa_Catalina_Island,_California" title="Santa Catalina Island, California">Catalina Island</a></td><td>most of Island</td><td>3,696</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Missouri</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Missouri" title="Missouri">Missouri</a></td><td bgcolor="#88DD88"><a href="/wiki/Branson,_Missouri" title="Branson, Missouri">Branson</a></td><td>Branson Landing district</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-91.8318334,37.9642529</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>New York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/New_York" title="New York">New York</a></td><td bgcolor="#DDDD88"><a href="/wiki/Fire_Island,_New_York" title="Fire Island, New York">Fire Island</a></td><td>most of Island</td><td>310</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.0059729,40.7142691</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>New York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/New_York" title="New York">New York</a></td><td bgcolor="#88DD88"><a href="/wiki/Governors_Island" title="Governors Island">Governors Island</a></td><td>entire Island</td><td>0</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.0059729,40.7142691</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>New York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/New_York" title="New York">New York</a></td><td bgcolor="#DDDD88"><a href="/wiki/Roosevelt_Island" title="Roosevelt Island">Roosevelt Island</a></td><td>most of Island</td><td>9,500</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.0059729,40.7142691</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>South Carolina</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/South_Carolina" title="South Carolina">South Carolina</a></td><td bgcolor="#DDDD88"><a href="/wiki/Daufuskie_Island" title="Daufuskie Island">Daufuskie Island</a></td><td>part of Island &amp; <a href="/wiki/Haig_Point" class="mw-redirect" title="Haig Point">Haig Point</a></td><td>429</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-81.1637245,33.836081</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td bgcolor="#DDDD88"><a href="/wiki/Venice,_California" class="mw-redirect" title="Venice, California">Venice</a></td><td><a href="/w/index.php?title=Venice_Canals&amp;action=edit&amp;redlink=1" title="Venice Canals (page does not exist)" class="new">Venice Canals</a></td><td>30,000 (pop. of Venice)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Arkansas</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Arkansas" title="Arkansas">Arkansas</a></td><td><a href="/wiki/Little_Rock,_Arkansas" title="Little Rock, Arkansas">Little Rock/North Little Rock</a></td><td>17 mile <a href="/wiki/Arkansas_River_Trail" title="Arkansas River Trail">Arkansas River Trail</a></td><td>272,000 (LR/NLR)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-91.8318334,35.20105</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td><a href="/wiki/Columbia,_California" title="Columbia, California">Columbia</a></td><td>Pedestrian mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td><a href="/wiki/Sacramento,_California" title="Sacramento, California">Sacramento</a></td><td><a href="/w/index.php?title=%27K%27_Street_Mall&amp;action=edit&amp;redlink=1" title="'K' Street Mall (page does not exist)" class="new">'K' Street Mall</a>, 12 blocks (1 mile) of 'K' Street, including an outdoor shopping mall and pedestrian freeway underpass to the old city historic district.</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td><a href="/wiki/Santa_Monica,_California" title="Santa Monica, California">Santa Monica</a></td><td><a href="/wiki/Third_Street_Promenade" title="Third Street Promenade">Third Street Promenade</a>, 1/2 mile (800 m) of 3rd Street</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td><a href="/wiki/Davis,_California" title="Davis, California">Davis</a></td><td>University of California Campus</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>California</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/California" title="California">California</a></td><td><a href="/wiki/Riverside,_California" title="Riverside, California">Riverside</a></td><td>Pedestrian mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-119.4179324,36.778261</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colorado</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colorado" title="Colorado">Colorado</a></td><td><a href="/wiki/Aspen,_Colorado" title="Aspen, Colorado">Aspen</a></td><td>Pedestrian malls</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-105.7820674,39.5500507</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colorado</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colorado" title="Colorado">Colorado</a></td><td><a href="/wiki/Boulder,_Colorado" title="Boulder, Colorado">Boulder</a></td><td>Pedestrian mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-105.7820674,39.5500507</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colorado</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colorado" title="Colorado">Colorado</a></td><td><a href="/wiki/Fort_Collins,_Colorado" title="Fort Collins, Colorado">Fort Collins</a></td><td>7 acres (28,000 m²), 4 streets</td><td>City population 115,000</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-105.7820674,39.5500507</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colorado</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colorado" title="Colorado">Colorado</a></td><td><a href="/wiki/Fort_Collins,_Colorado" title="Fort Collins, Colorado">Fort Collins</a></td><td><a href="/wiki/Colorado_State_University" title="Colorado State University">Colorado State University</a>, 4 long streets</td><td>25,000 students</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-105.7820674,39.5500507</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Colorado</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Colorado" title="Colorado">Colorado</a></td><td><a href="/wiki/Denver,_Colorado" class="mw-redirect" title="Denver, Colorado">Denver</a></td><td>16th Street Mall, about a mile (1.6&#160;km) long</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-105.7820674,39.5500507</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Florida</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Florida" title="Florida">Florida</a></td><td><a href="/wiki/Miami_Beach,_Florida" title="Miami Beach, Florida">Miami Beach</a></td><td><a href="/wiki/Lincoln_Road" title="Lincoln Road">Lincoln Road Mall</a>, 7 blocks or 0.5 mile (800 m)</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-81.5157535,27.6648274</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Georgia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Georgia_(U.S._state)" title="Georgia (U.S. state)">Georgia</a></td><td>Metro <a href="/wiki/Atlanta,_Georgia" class="mw-redirect" title="Atlanta, Georgia">Atlanta</a></td><td><a href="/w/index.php?title=East_Lake_Commons&amp;action=edit&amp;redlink=1" title="East Lake Commons (page does not exist)" class="new">East Lake Commons</a>, 67 dwellings planned</td><td>Probably 200</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-82.907123,32.1574351</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Indiana</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Indiana" title="Indiana">Indiana</a></td><td><a href="/wiki/Indianapolis,_Indiana" class="mw-redirect" title="Indianapolis, Indiana">Indianapolis</a></td><td>The Canal</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-85.6023643,40.5512165</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Iowa</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Iowa" title="Iowa">Iowa</a></td><td><a href="/wiki/Iowa_City,_Iowa" title="Iowa City, Iowa">Iowa City</a></td><td>Pedestrian mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-93.097702,41.8780025</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Louisiana</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Louisiana" title="Louisiana">Louisiana</a></td><td><a href="/wiki/New_Orleans,_Louisiana" class="mw-redirect" title="New Orleans, Louisiana">New Orleans</a></td><td>Several blocks between the French Quarter and the river</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-92.1450245,31.2448234</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Massachusetts</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Massachusetts" title="Massachusetts">Massachusetts</a></td><td><a href="/wiki/Boston,_Massachusetts" class="mw-redirect" title="Boston, Massachusetts">Boston</a></td><td>Downtown Crossing, several car free streets</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-71.3824374,42.4072107</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Massachusetts</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Massachusetts" title="Massachusetts">Massachusetts</a></td><td><a href="/wiki/Cambridge,_Massachusetts" title="Cambridge, Massachusetts">Cambridge</a></td><td>Memorial Drive</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-71.3824374,42.4072107</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Minnesota</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Minnesota" title="Minnesota">Minnesota</a></td><td><a href="/wiki/Minneapolis,_Minnesota" class="mw-redirect" title="Minneapolis, Minnesota">Minneapolis</a></td><td><a href="/wiki/Skyway" title="Skyway">skyway</a> 5 miles (8&#160;km) of enclosed overhead passageways</td><td>1,500 residences; 4,000 hotel rooms</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-94.6858998,46.729553</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Minnesota</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Minnesota" title="Minnesota">Minnesota</a></td><td><a href="/wiki/Minneapolis,_Minnesota" class="mw-redirect" title="Minneapolis, Minnesota">Minneapolis</a></td><td><a href="/wiki/Nicollet_Mall" title="Nicollet Mall">Nicollet Mall</a> Central E/W downtown street; access to motor-vehicles limited to Metro Transit busses</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-94.6858998,46.729553</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Minnesota</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Minnesota" title="Minnesota">Minnesota</a></td><td><a href="/wiki/Saint_Paul,_Minnesota" title="Saint Paul, Minnesota">Saint Paul</a></td><td><a href="/wiki/Skyway" title="Skyway">skyway</a> a grid of enclosed overhead and underground passageways</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-94.6858998,46.729553</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>New York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/New_York" title="New York">New York</a></td><td><a href="/wiki/Ithaca,_New_York" title="Ithaca, New York">Ithaca</a></td><td><a href="/wiki/Ithaca_Commons" title="Ithaca Commons">Ithaca Commons</a> (pedestrian mall)</td><td>30,000 (entire city of Ithaca)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.0059729,40.7142691</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>New York</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/New_York" title="New York">New York</a></td><td><a href="/wiki/Buffalo,_New_York" title="Buffalo, New York">Buffalo</a></td><td><a href="/w/index.php?title=Main_Street_Mall_(Buffalo)&amp;action=edit&amp;redlink=1" title="Main Street Mall (Buffalo) (page does not exist)" class="new">Main Street Mall (Buffalo)</a>, Downtown light-rail "main street" mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.0059729,40.7142691</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Nevada</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Nevada" title="Nevada">Nevada</a></td><td><a href="/wiki/Las_Vegas,_Nevada" title="Las Vegas, Nevada">Las Vegas</a></td><td><a href="/wiki/Fremont_Street_Experience" title="Fremont Street Experience">Fremont Street Experience</a></td><td>6,489 hotel rooms</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-116.419389,38.8026097</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ohio</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Ohio" title="Ohio">Ohio</a></td><td><a href="/wiki/Cleveland,_Ohio" class="mw-redirect" title="Cleveland, Ohio">Cleveland</a></td><td><a href="/w/index.php?title=E._4th_Street&amp;action=edit&amp;redlink=1" title="E. 4th Street (page does not exist)" class="new">E. 4th Street</a></td><td>Approximately 350 along the street (several thousand in adjacent streets)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-82.907123,40.4172871</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Oregon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Oregon" title="Oregon">Oregon</a></td><td><a href="/wiki/Portland,_Oregon" title="Portland, Oregon">Portland</a></td><td><a href="/w/index.php?title=RiverPlace&amp;action=edit&amp;redlink=1" title="RiverPlace (page does not exist)" class="new">RiverPlace</a>, pedestrian promenade about 1/2 mile (800 m) long (the only large car free area); pedestrian alleys connect other buildings to the promenade; the site is 73 acres (300,000 m²)</td><td>1,200</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-120.5542012,43.8041334</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Oregon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Oregon" title="Oregon">Oregon</a></td><td><a href="/wiki/Portland,_Oregon" title="Portland, Oregon">Portland</a></td><td><a href="/w/index.php?title=Portland_Center&amp;action=edit&amp;redlink=1" title="Portland Center (page does not exist)" class="new">Portland Center</a>, two pedestrian streets run parallel through the development, which includes two parks (car free streets total about 1 mile (1.6&#160;km) length)</td><td>1200</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-120.5542012,43.8041334</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>South Carolina</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/South_Carolina" title="South Carolina">South Carolina</a></td><td><a href="/wiki/Harbour_Town" class="mw-redirect" title="Harbour Town">Harbour Town</a>, <a href="/wiki/Hilton_Head,_South_Carolina" class="mw-redirect" title="Hilton Head, South Carolina">Hilton Head, South Carolina</a></td><td>Artificial harbor with promenade and shops</td><td>Few hundred</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-81.1637245,33.836081</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>South Carolina</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/South_Carolina" title="South Carolina">South Carolina</a></td><td><a href="/w/index.php?title=Shelter_Cove_Harbor&amp;action=edit&amp;redlink=1" title="Shelter Cove Harbor (page does not exist)" class="new">Shelter Cove Harbor</a>, <a href="/wiki/Hilton_Head,_South_Carolina" class="mw-redirect" title="Hilton Head, South Carolina">Hilton Head, South Carolina</a></td><td>Artificial harbor with promenade and shops, larger than Harbour Town</td><td>Several hundred</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-81.1637245,33.836081</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Virginia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Virginia" title="Virginia">Virginia</a></td><td><a href="/wiki/Colonial_Williamsburg" title="Colonial Williamsburg">Colonial Williamsburg</a></td><td>5 blocks plus side streets (from 09:00 to 17:00)</td><td>100 families of workers</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-78.6568942,37.4315734</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tennessee</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tennessee" title="Tennessee">Tennessee</a></td><td><a href="/wiki/Memphis,_Tennessee" title="Memphis, Tennessee">Memphis</a></td><td><a href="/w/index.php?title=Main_Street_Mall&amp;action=edit&amp;redlink=1" title="Main Street Mall (page does not exist)" class="new">Main Street Mall</a>, 3/4 of a mile (1200 m)</td><td>5000</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-86.5804473,35.5174913</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tennessee</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tennessee" title="Tennessee">Tennessee</a></td><td><a href="/wiki/Knoxville,_Tennessee" title="Knoxville, Tennessee">Knoxville</a></td><td><a href="/wiki/Market_Square,_Knoxville" title="Market Square, Knoxville">Market Square</a>, (150 m)</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-86.5804473,35.5174913</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Texas</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Texas" title="Texas">Texas</a></td><td><a href="/wiki/San_Antonio,_Texas" class="mw-redirect" title="San Antonio, Texas">San Antonio</a></td><td><a href="/wiki/San_Antonio_River_Walk" title="San Antonio River Walk">River Walk</a></td><td>1,296,682</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-99.9018131,31.9685988</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Vermont</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Vermont" title="Vermont">Vermont</a></td><td><a href="/wiki/Burlington,_Vermont" title="Burlington, Vermont">Burlington</a></td><td><a href="/w/index.php?title=Church_Street_Marketplace&amp;action=edit&amp;redlink=1" title="Church Street Marketplace (page does not exist)" class="new">Church Street Marketplace</a></td><td>38,889 Burlington proper (2000 Census)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-72.5778415,44.5588028</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Virginia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Virginia" title="Virginia">Virginia</a></td><td><a href="/wiki/Charlottesville,_Virginia" title="Charlottesville, Virginia">Charlottesville</a></td><td>Pedestrian mall</td><td></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-78.6568942,37.4315734</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Wisconsin</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Wisconsin" title="Wisconsin">Wisconsin</a></td><td><a href="/wiki/Madison,_Wisconsin" title="Madison, Wisconsin">Madison</a></td><td>State St</td><td>200,000 (approx)</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-88.7878678,43.7844397</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Buenos Aires</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Buenos_Aires" title="Buenos Aires">Buenos Aires</a></td><td>Downtown pedestrian circuit [Microcentro]</td><td>2.9 million (Capital)</td><td>The pedestrian circuit in the city centre is composed by <a href="/wiki/Florida_Street" title="Florida Street">Florida Street</a>, about 12 blocks, 5 blocks of Lavalle Street, one block of Diagonal Norte, two blocks Tres Sargentos Street and one block of the Pasaje Carlos Discepolo, very vibrant area with many restaurants, theatres, shopping, etc, a short walk from the obelisk, people throng here, streets are entirely car free, but crossing streets are not. Access by bus and the <a href="/wiki/Line_C_(Buenos_Aires)" title="Line C (Buenos Aires)">Metro (subte) Line C</a>. Buenos Aires, for the most part, is a very walkable city.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-58.3731613,-34.6084175</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Puerto Madero, Buenos Aires</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Puerto_Madero" title="Puerto Madero">Puerto Madero, Buenos Aires</a></td><td>City centre waterfront</td><td>Part of city</td><td>Very successful waterfront redevelopment area. Highly pedestrianized and car free mixed use district which includes corporate headquarters, luxury condos, residential and business lofts, five star hotels, exclusive restaurants, parks and an ecological reserve. <a href="http://www.puertomadero.com/i_index.cfm" class="external text" rel="nofollow">Puerto Madero</a> website.
+<p>A recently inaugurated 2 kilometre modern tramway (<a href="/wiki/Tranv%C3%ADa_del_Este" title="Tranvía del Este">Tranvía del Este</a>) line serves the area.</p>
+</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-58.3617076,-34.6104263</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>La Boca, Buenos Aires</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/La_Boca" title="La Boca">La Boca, Buenos Aires</a></td><td>Several blocks of main street</td><td>Part of city</td><td>Barrio La Boca is a colourful working class neighbourhood where descendants of Italian immigrants once settled, <i>El Caminito</i>, its main street, is pedestrianized and touristy.
+<p>An extension of Puerto Madero's light rail tram system to Retiro Station and Barrio La Boca is contemplated.</p>
+</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-58.3631337,-34.6344961</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Greater Buenos Aires</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Greater_Buenos_Aires" title="Greater Buenos Aires">Greater Buenos Aires</a></td><td><a href="/wiki/Tren_de_la_Costa" title="Tren de la Costa">Tren de la Costa</a>, car free artery</td><td>12.4 million</td><td>A unique suburban modern leisure tramway artery that stretches for 15 kilometres by the River Plate from Olivos to the village of Tigre, each of its eleven “turn of the century” picturesque stations have a charm of its own with its plazas, cafes, antique shops, movie theatres, boutiques, restaurants and regional product markets. You can get on and off during the day as many times as you wish. Good sample of <a href="/wiki/Transit-oriented_development" title="Transit-oriented development">Transit-oriented development</a>. <a href="http://www.trendelacosta.com.ar/site/" class="external text" rel="nofollow">Tren de la Costa</a> website.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-58.3731613,-34.6084175</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tigre, Buenos Aires</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tigre,_Buenos_Aires" title="Tigre, Buenos Aires">Tigre, Buenos Aires</a></td><td>Delta</td><td>Several thousand</td><td>The village of <a href="/wiki/Tigre,_Buenos_Aires" title="Tigre, Buenos Aires">Tigre</a> is the starting point of the magnificent Delta where commuter mahogany launches reminiscent of the roaring twenties travel its web of connecting rivers and streams dotted with week-end homes, English style rowing clubs, countless marinas, large mansions from the <a href="/wiki/Belle_%C3%89poque" title="Belle Époque">Belle Époque</a> and a variety of recreational complexes which offer food, lodging and entertainment. Total absence of cars.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-58.5796585,-34.425087</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Mendoza</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Mendoza,_Argentina" title="Mendoza, Argentina">Mendoza</a></td><td>Several blocks, centre of town</td><td>111,000</td><td>Wide tree-lined streets, many parks and plazas, ceramic-tiled sidewalks, pedestrianised “Peatonal Sarmiento” adjacent to Plaza Independencia features many outdoor cafe's, restaurants, wine bars and shops. City is served by antiquated trolleybus lines. Mendoza is the capital of the wine producing <a href="/wiki/Mendoza_Province" title="Mendoza Province">Mendoza Province</a>.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-68.8440498,-32.890183</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rosario</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Rosario,_Argentina" class="mw-redirect" title="Rosario, Argentina">Rosario</a></td><td>Central business district</td><td>300,000</td><td>Almost 2 kilometre of retail area, system of parks that line the riverfront area.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-60.6665001,-32.9507408</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Córdoba</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/C%C3%B3rdoba,_Argentina" title="Córdoba, Argentina">Córdoba</a></td><td>various pedestrian circuits</td><td>1.2 million</td><td>The city’s downtown includes 2 kilometres of pedestrianized areas with theatres, shops, outdoor cafes, restaurants, parks and plazas, and an active nightlife. Trolleybus and bus provide access.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.7791517,37.8847267</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>La Cumbrecita, Córdoba</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/La_Cumbrecita" title="La Cumbrecita">La Cumbrecita</a>, <a href="/wiki/C%C3%B3rdoba_Province_(Argentina)" title="Córdoba Province (Argentina)">Córdoba</a></td><td>First pedestrian village in Argentina</td><td>Several hundred</td><td>A beautiful small picturesque secluded alpine-like village in the <a href="/wiki/C%C3%B3rdoba_Province_(Argentina)" title="Córdoba Province (Argentina)">Province of Córdoba</a> settled by central Europeans. Focused on eco-tourism, no paved roads, transport on foot.
+<p>Excursions to La Cumbrecita can be taken from nearby <a href="/wiki/Villa_General_Belgrano" title="Villa General Belgrano">Villa General Belgrano</a>, not car free but pedestrian friendly.</p>
+</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-4.7791517,37.8847267</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Curitiba, Brazil</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Curitiba" title="Curitiba">Curitiba</a>, <a href="/wiki/Brazil" title="Brazil">Brazil</a></td><td>car free area in downtown, 24 linear blocks</td><td>2.7 million (2000 census)</td><td>Twenty blocks in the heart of the city are paved with decorative tile in which vehicular traffic is restricted to delivery trucks at set hours, part of this area was pedestrianized in the 70's. It includes much of the historic district. photos Its served by a <a href="/wiki/Bus_Rapid_Transit" class="mw-redirect" title="Bus Rapid Transit">unique bus system</a> running on dedicated streets and providing excellent, low-cost service. <a href="http://www.solutions-site.org/artman/publish/cat_index_13.shtml" class="external autonumber" rel="nofollow">[1]</a></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-49.2732515,-25.4283563</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ilha do Mel, Paraná, Brazil</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td>Ilha do Mel, <a href="/wiki/Paran%C3%A1_(state)" title="Paraná (state)">Paraná</a>, <a href="/wiki/Brazil" title="Brazil">Brazil</a></td><td>Small Island offshore of Paranaguá</td><td>The Island has two small fishing villages</td><td>The entire Island is car free, and even cattle free. All goods and materials are carted around by big wheel barrows. Economy is traditionally fishing but Ecotourism is now a big part of economy. 95% of Island is now an ecological reserve. Villages are connected by 2 meter wide sandy walking paths</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-48.3388889,-25.5116667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ilha Grande, Rio de janeiro, Brazil</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Ilha_Grande" title="Ilha Grande">Ilha Grande</a>, <a href="/wiki/Rio_de_Janeiro_(state)" title="Rio de Janeiro (state)">Rio de janeiro</a>, <a href="/wiki/Brazil" title="Brazil">Brazil</a></td><td>Entire island</td><td>177.832<sup class="reference" id="cite_ref-4"><a href="#cite_note-4"><span>[</span>5<span>]</span></a></sup></td><td>Large car-free island off the coast of the state, part of <a href="/wiki/Angra_dos_Reis" title="Angra dos Reis">Angra dos Reis</a> municipality. Only allowed vehicles are bicycles, tractors and rentable jeeps.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-44.2289441,-23.1520839</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Paquetá Island, Rio de Janeiro, Brazil</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Paquet%C3%A1_Island" title="Paquetá Island">Paquetá Island</a>, <a href="/wiki/Rio_de_Janeiro" title="Rio de Janeiro">Rio de Janeiro</a>, <a href="/wiki/Brazil" title="Brazil">Brazil</a></td><td>Entire island</td><td>About 7000</td><td>Car free island in Guanabara Bay, an hour by water from downtown Rio. In the south portion of the island, Danke de Mattos Park is also cicle-free.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-43.1333333,-22.7666667</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Santiago, Chile</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Santiago,_Chile" title="Santiago, Chile">Santiago</a>, <a href="/wiki/Chile" title="Chile">Chile</a></td><td>Three interconnected streets in downtown square</td><td>5.4 million</td><td>Ahumada, Huerfanos &amp; Estado Streets around Plaza de Armas, the city's main square and historical centre. Shopping, office and cultural activities. Santiagos ultra modern line 5 metro station is located under the plaza.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-70.5664659,-33.4253598</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Bogotá, Colombia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Bogot%C3%A1" title="Bogotá">Bogotá</a>, <a href="/wiki/Colombia" title="Colombia">Colombia</a></td><td>The <a href="/wiki/Ciclov%C3%ADa" title="Ciclovía">Ciclovía</a>, 110 kilometers of roads throughout the city</td><td>6.5 million</td><td>The <a href="/wiki/Ciclov%C3%ADa" title="Ciclovía">Ciclovía</a> roads are closed to traffic Sundays and holidays for 7 hours, from 0700 to 1400, when more than 1.5 million people practice various sports, visit the recreational facilities, or go to cycle-mass. The city also plans to become largely car free during rush hour by the year 2015. <sup class="reference" id="cite_ref-5"><a href="#cite_note-5"><span>[</span>6<span>]</span></a></sup> <sup class="reference" id="cite_ref-6"><a href="#cite_note-6"><span>[</span>7<span>]</span></a></sup></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-74.08205,4.609866</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ouagadougou, Burkina Faso</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Ouagadougou" title="Ouagadougou">Ouagadougou</a>, <a href="/wiki/Burkina_Faso" title="Burkina Faso">Burkina Faso</a></td><td>City center</td><td>960,100</td><td>Until very recently (2004), most of the city saw very little cars on the street, and transport within the city basically consisted of the bicycle or by foot. This was because of the cities' urban planning (mostly boulevards planted on both sides with green trees or baobabs, yet presumably also because of the villager's low income. At present, more mechanized transport is seen on the streets such as motorcycles and small cars. <sup class="reference" id="cite_ref-7"><a href="#cite_note-7"><span>[</span>8<span>]</span></a></sup></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-1.533864,12.364637</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lamu, Kenya</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Lamu" title="Lamu">Lamu</a>, <a href="/wiki/Kenya" title="Kenya">Kenya</a></td><td>Entire Island</td><td>Several thousand but exact population unknown.</td><td>Lamu town is an old, Swahilli settlement where only foot, cycle and donkey traffic is allowed.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>40.8993401,-2.2656782</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Fes el Bali, Morocco</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Fes_el_Bali" title="Fes el Bali">Fes el Bali</a>, <a href="/wiki/Morocco" title="Morocco">Morocco</a></td><td>Entire medina of Fes</td><td>156,000 (2002), making it the most populated car free district in the world</td><td>Fes-al-Bali, the larger of the two medinas of Fes, is a nearly intact medieval city. The entire medina was designated a UNESCO World Heritage Site in 1981, with 13,380 historic buildings since enumerated in the course of a thorough GIS survey of the medina. There are reputed to be 10,539 retail businesses in the medina, which remains a prime commercial center of the city of Fes (population about 1,000,000). Fes-el-Bali's medieval streets are entirely inaccessible by automobile. Only foot, cycle, donkey and cart traffic is even possible. A few access streets for emergency vehicles are being built.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-5.1249662,34.5479527</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Jerusalem, Israel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Jerusalem" title="Jerusalem">Jerusalem</a>, <a href="/wiki/Israel" title="Israel">Israel</a></td><td><a href="/wiki/Old_City_(Jerusalem)" title="Old City (Jerusalem)">Old City</a></td><td>35,000</td><td>Most of the old walled city is a maze of interesting alleys and narrow streets accessible only to foot traffic. Small motorised "mini-tractors" are permitted for goods delivery. Previously the area was truly car-free when donkeys were used for goods delivery, but they are now banned because of the associated hygiene problems.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>35.2007,31.7857</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Jerusalem, Israel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Jerusalem" title="Jerusalem">Jerusalem</a>, <a href="/wiki/Israel" title="Israel">Israel</a></td><td><a href="/wiki/Ben_Yehuda_Street" title="Ben Yehuda Street">Ben Yehuda Street</a></td><td>N/A</td><td>Part of this central thoroughfare was pedestrianized in the 1980s and has since become a major <a href="/wiki/Commerce" title="Commerce">commercial</a> center.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>35.2007,31.7857</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tel Aviv, Israel</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Tel_Aviv" title="Tel Aviv">Tel Aviv</a>, <a href="/wiki/Israel" title="Israel">Israel</a></td><td><a href="/w/index.php?title=Nahalat_Binyamin&amp;action=edit&amp;redlink=1" title="Nahalat Binyamin (page does not exist)" class="new">Nahalat Binyamin</a></td><td>N/A</td><td>This is a pedestrianized street lined by shops and cafes, which hosts a weekly arts fair.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>34.7595,32.0554</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Beirut, Lebanon</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Beirut" title="Beirut">Beirut</a>, <a href="/wiki/Lebanon" title="Lebanon">Lebanon</a></td><td>Downtown Beirut</td><td>N/A</td><td>The area is filled with shops, restaurants and cafes.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>35.4954794,33.8886289</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Discovery Bay, Hong Kong (People's Republic of China)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Discovery_Bay" title="Discovery Bay">Discovery Bay</a>, <a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a> (<a href="/wiki/People%27s_Republic_of_China" title="People's Republic of China">People's Republic of China</a>)</td><td>Modern residential development set on the northeastern coast of <a href="/wiki/Lantau_Island" title="Lantau Island">Lantau Island</a></td><td>14,300</td><td>Private cars are prohibited on the road network in Discovery Bay; however buses and delivery vehicles as well as vehicles owned by the developer are allowed. Residents travel internally via the bus network or a controlled number of private golf carts; and commute externally via the ferry or external bus service which connects with the mass transit systems in Hong Kong.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>114.0101467,22.2921406</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Ma Wan, Hong Kong (People's Republic of China)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Ma_Wan" title="Ma Wan">Ma Wan</a>, <a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a> (<a href="/wiki/People%27s_Republic_of_China" title="People's Republic of China">People's Republic of China</a>)</td><td>Entire island dominated by Park Island residential development</td><td>&#160;?</td><td>Private cars are prohibited on the island, which has road connections to the <a href="/wiki/Lantau_Link" title="Lantau Link">Lantau Link</a>; however buses and delivery vehicles as well as vehicles owned by the developer are allowed. Residents commute externally via the ferry or external bus service which connects with the mass transit systems in Hong Kong.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>114.059207,22.3500753</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Cheung Chau, Hong Kong (People's Republic of China)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Cheung_Chau" title="Cheung Chau">Cheung Chau</a>, <a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a> (<a href="/wiki/People%27s_Republic_of_China" title="People's Republic of China">People's Republic of China</a>)</td><td>Entire island</td><td>30,000</td><td>No full size automobiles allowed. A few miniature emergency vehicles exist as do small utilitarian vehicles. Residents walk, via an extensive and well-maintained network of trails. Ferries take residents to the rest of Hong Kong.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>114.0265007,22.2016179</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lamma Island, Hong Kong (People's Republic of China)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Lamma_Island" title="Lamma Island">Lamma Island</a>, <a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a> (<a href="/wiki/People%27s_Republic_of_China" title="People's Republic of China">People's Republic of China</a>)</td><td>Third largest island in <a href="/wiki/Hong_Kong" title="Hong Kong">Hong Kong</a></td><td>6,000</td><td>No full size automobiles allowed, except for the area within the Hongkong Electricity power station. A few miniature emergency vehicles exist as do small utilitarian vehicles. Residents walk, via an extensive and well-maintained network of trails. Ferries take residents to and from the two largest settlements to the rest of Hong Kong.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>114.1350173,22.2000056</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>GuLangYu, Xiamen FuJian, People's Republic of China</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/w/index.php?title=GuLangYu&amp;action=edit&amp;redlink=1" title="GuLangYu (page does not exist)" class="new">GuLangYu</a>, <a href="/w/index.php?title=Xiamen_FuJian&amp;action=edit&amp;redlink=1" title="Xiamen FuJian (page does not exist)" class="new">Xiamen FuJian</a>, <a href="/wiki/People%27s_Republic_of_China" title="People's Republic of China">People's Republic of China</a></td><td>Small Island near Xiamen</td><td>&#160;?</td><td>All vehicles, including bicycles, are banned on the island, with some electric busses circulating for public transit.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>118.0707078,24.444903</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Pontocho &amp; Nishiki Market, Kyoto, Japan</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td><a href="/wiki/Pontocho" class="mw-redirect" title="Pontocho">Pontocho</a> &amp; <a href="/wiki/Nishiki_Market" title="Nishiki Market">Nishiki Market</a>, <a href="/wiki/Kyoto" title="Kyoto">Kyoto</a>, <a href="/wiki/Japan" title="Japan">Japan</a></td><td>Central market district</td><td>&#160;?</td><td>Three covered pedestrian streets (Nishiki, Teramachi, Shinkyogoku) and several open-air, pedestrian-only streets, including main food market and shopping streets.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>135.771111,35.007969</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Tokelau</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Tokelau" title="Tokelau">Tokelau</a></td><td>Pacific Island Nation</td><td>1466 permanent residents</td><td>Although cars are allowed on the islands, due to its limited development, only 4 cars are present on the whole of the 4 islands. <sup class="reference" id="cite_ref-8"><a href="#cite_note-8"><span>[</span>9<span>]</span></a></sup></td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>-171.855881,-8.967363</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Rottnest Island, Western Australia</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Rottnest_Island" title="Rottnest Island">Rottnest Island</a>, <a href="/wiki/Western_Australia" title="Western Australia">Western Australia</a></td><td>Tourist island</td><td>300 permanent residents</td><td>No cars allowed on island, all transport is on foot or bicycles. Occasional tourist bus.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>115.539565,-31.995406</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Maria Island, Tasmania</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#88DD88"><a href="/wiki/Maria_Island" title="Maria Island">Maria Island</a>, <a href="/wiki/Tasmania" title="Tasmania">Tasmania</a></td><td>Tourist island</td><td>15 permanent residents</td><td>No cars allowed on island, all transport is on foot or bicycles. Park rangers are only permanent residents.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>148.0649697,-42.6451462</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Lord Howe Island, New South Wales</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Lord_Howe_Island" title="Lord Howe Island">Lord Howe Island</a>, <a href="/wiki/New_South_Wales" title="New South Wales">New South Wales</a></td><td>Tourist island</td><td>350 permanent residents</td><td>A small number of resident permits, however most transport is on foot or bicycles.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>159.081217,-31.55247</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Civic Square, Canberra ACT</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88">Civic Square, <a href="/wiki/Canberra" title="Canberra">Canberra</a> <a href="/wiki/Australian_Capital_Territory" title="Australian Capital Territory">ACT</a></td><td>Central shopping area from Civic Bus Interchange, all the way down to <a href="/wiki/Glebe_Park,_Canberra" title="Glebe Park, Canberra">Glebe Park, Canberra</a>. Includes Garema Place and Petrie Plaza. Until recently, Civic Bus Interchange was also a <a href="/wiki/Shared_Zone" title="Shared Zone">Shared Zone</a>, however shared zone signs have now been removed and replaced with standard 20&#160;km/h speed limit signs, thus removing right of way for pedestrians.</td><td></td><td>No private cars. An area frequented by tourists, students and shoppers. Plenty of bike parking exists.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>149.12858,-35.28204</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Queen Street Mall, Brisbane Queensland</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Queen_Street_Mall,_Brisbane" title="Queen Street Mall, Brisbane">Queen Street Mall, Brisbane</a> <a href="/wiki/Queensland" title="Queensland">Queensland</a></td><td>Central shopping area, connects with <a href="/wiki/King_George_Square,_Brisbane" title="King George Square, Brisbane">King George Square</a></td><td></td><td>No private cars. Underground busway.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>153.0252,-27.4696</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Melbourne city centre (some areas)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Melbourne_city_centre" class="mw-redirect" title="Melbourne city centre">Melbourne city centre</a> (some areas)</td><td><a href="/wiki/Bourke_Street_Mall" class="mw-redirect" title="Bourke Street Mall">Bourke Street Mall</a> and large number of <a href="/wiki/List_of_lanes_and_arcades_in_Melbourne_city_centre" title="List of lanes and arcades in Melbourne city centre">city laneways</a> including Block Arcade, Royal Arcade, Degraves Lane, QV, City Square and <a href="/wiki/Federation_Square" title="Federation Square">Federation Square</a>. Home to growing residential population. Connects to Swanston Street Walk.<sup class="reference" id="cite_ref-9"><a href="#cite_note-9"><span>[</span>10<span>]</span></a></sup></td><td>Thousands of permanent, hundreds of temporary</td><td>No private cars, some exemptions for Swanston Street Walk. Bicycles not allowed on Bourke Street Mall.</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>144.963169,-37.814251</coordinates>
+			</Point>
+		</Placemark>
+      
+	    <Placemark>
+			<name>Sydney central business district (some areas)</name>
+			 <description>
+		        <![CDATA[
+		          <table><tr><th>Location</th><th>Area</th><th>Population</th><th>Character</th></tr><tr><td bgcolor="#DDDD88"><a href="/wiki/Sydney_central_business_district" title="Sydney central business district">Sydney central business district</a> (some areas)</td><td>Central shopping area. <a href="/wiki/Pitt_Street_Mall,_Sydney" title="Pitt Street Mall, Sydney">Pitt Street Mall, Sydney</a> and tourist precinct <a href="/wiki/Darling_Harbour,_New_South_Wales" title="Darling Harbour, New South Wales">Darling Harbour, New South Wales</a></td><td></td><td>Some ferries, trams and monorail</td></tr></table>
+		        ]]>
+	      	</description>
+			<styleUrl>#msn_grn-blank1</styleUrl>
+			<Point>
+				<coordinates>151.207114,-33.867139</coordinates>
+			</Point>
+		</Placemark>
+     
+
+</Document>
+</kml>

@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom' xmlns:openSearch='http://a9.com/-/spec/opensearchrss/1.0/'
+      xmlns:gCal='http://schemas.google.com/gCal/2005' xmlns:gd='http://schemas.google.com/g/2005'>
+  <id>
+    http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic
+  </id>
+  <updated>2011-04-21T15:34:24.000Z</updated>
+  <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+  <title type='text'>Andy Public</title>
+  <subtitle type='text'/>
+  <link rel='alternate' type='text/html'
+        href='http://www.google.com/calendar/embed?src=likuski.org_umjmva7f5g00j0fgpbtaj1iocg@group.calendar.google.com'/>
+  <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml'
+        href='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic'/>
+  <link rel='http://schemas.google.com/g/2005#batch' type='application/atom+xml'
+        href='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic/batch'/>
+  <link rel='self' type='application/atom+xml'
+        href='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic?max-results=25'/>
+  <author>
+    <name>Andy Likuski</name>
+    <email>andy@likuski.org</email>
+  </author>
+  <generator version='1.0' uri='http://www.google.com/calendar'>Google Calendar</generator>
+  <openSearch:totalResults>2</openSearch:totalResults>
+  <openSearch:startIndex>1</openSearch:startIndex>
+  <openSearch:itemsPerPage>25</openSearch:itemsPerPage>
+  <gCal:timezone value='America/New_York'/>
+  <gCal:timesCleaned value='0'/>
+  <gd:where valueString=''/>
+  <entry>
+    <id>
+      http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic/jtu8ubrbmthtbsft96vgpnpk5o
+    </id>
+    <published>2011-04-14T21:35:41.000Z</published>
+    <updated>2011-04-21T15:34:24.000Z</updated>
+    <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+    <title type='html'>Ecocity World Summit</title>
+    <summary type='html'>When: Mon Aug 22, 2011 to Fri Aug 26, 2011&amp;nbsp;
+      &lt;br&gt;
+      &lt;br&gt;Who: Andy Public
+      &lt;br&gt;Where: Montr&amp;eacute;al, Qu&amp;eacute;bec, Canada
+      &lt;br&gt;Event Status: confirmed
+    </summary>
+    <content type='html'>When: Mon Aug 22, 2011 to Fri Aug 26, 2011 
+      &lt;br /&gt;
+      &lt;br /&gt;Who: Andy Public
+      &lt;br /&gt;Where: Montréal, Québec, Canada
+      &lt;br /&gt;Event Status: confirmed
+      &lt;br /&gt;Event Description: http://www.ecocity2011.com/accueil/default_e.asp
+    </content>
+    <link rel='alternate' type='text/html'
+          href='http://www.google.com/calendar/event?eid=anR1OHVicmJtdGh0YnNmdDk2dmdwbnBrNW8gbGlrdXNraS5vcmdfdW1qbXZhN2Y1ZzAwajBmZ3BidGFqMWlvY2dAZw'
+          title='alternate'/>
+    <link rel='self' type='application/atom+xml'
+          href='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic/jtu8ubrbmthtbsft96vgpnpk5o'/>
+    <author>
+      <name>Andy Public</name>
+    </author>
+  </entry>
+  <entry>
+    <id>
+      http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic/boh3eusucon5cukimnsso83kis
+    </id>
+    <published>2011-04-21T14:59:01.000Z</published>
+    <updated>2011-04-21T15:33:52.000Z</updated>
+    <category scheme='http://schemas.google.com/g/2005#kind' term='http://schemas.google.com/g/2005#event'/>
+    <title type='html'>Towards Carfree Cities International Conference</title>
+    <summary type='html'>When: Mon Sep 5, 2012 to Fri Sep 9, 2011&amp;nbsp;
+      &lt;br&gt;
+      &lt;br&gt;Who: Andy Public
+      &lt;br&gt;Where: Guadalajara, Mexico
+      &lt;br&gt;Event Status: confirmed
+    </summary>
+    <content type='html'>When: Mon Sep 5, 2012 to Fri Sep 9, 2011 
+      &lt;br /&gt;
+      &lt;br /&gt;Who: Andy Public
+      &lt;br /&gt;Where: Guadalajara, Mexico
+      &lt;br /&gt;Event Status: confirmed
+      &lt;br /&gt;Event Description: http://www.carfree.mx/index_en.html This is an event in Mexico!!!
+    </content>
+    <link rel='alternate' type='text/html'
+          href='http://www.google.com/calendar/event?eid=Ym9oM2V1c3Vjb241Y3VraW1uc3NvODNraXMgbGlrdXNraS5vcmdfdW1qbXZhN2Y1ZzAwajBmZ3BidGFqMWlvY2dAZw'
+          title='alternate'/>
+    <link rel='self' type='application/atom+xml'
+          href='http://www.google.com/calendar/feeds/likuski.org_umjmva7f5g00j0fgpbtaj1iocg%40group.calendar.google.com/public/basic/boh3eusucon5cukimnsso83kis'/>
+    <author>
+      <name>Andy Public</name>
+    </author>
+  </entry>
+</feed>

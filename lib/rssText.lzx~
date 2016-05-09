@@ -1,0 +1,69 @@
+<library>
+  <!-- This class must be embeded in an rssPost -->
+  <class name="rssText" height="${null}" width="${parent.width}">
+    <attribute name="postRef" value="${parent}"/>
+    <attribute name="titlePathText" value="$path{postRef.titlePath}"/>
+    <attribute name="linkPathText" value="$path{postRef.linkPath}"/>
+    <attribute name="datePathText" value="$path{postRef.datePath}" />
+    <attribute name="showDate" value="true" />
+    <attribute name="descriptionPathText" value="$path{postRef.descriptionPath}"/>
+    <attribute name="expanded" value="true"/>
+    <attribute name="expandable" value="false"/>
+    <attribute name="staticHeight" value="${null}"/>
+    <event name="onselected"/>
+
+    <simplelayout axis="y" spacing="5" />
+    <view x="30" name="title" width="${parent.width}">
+      <simplelayout axis="y" spacing="5" />
+      <view name="contents" width="${parent.width}">
+        <simplelayout axis="x" spacing="5" />
+        <pageText name="titleText" selectable="true" multiline="false" width="${null}" >
+          <handler name="oninit"><![CDATA[
+            this.setAttribute('text', "<i>"+
+             "<a href=''>" +
+             classroot.postRef.mapTitle(classroot.titlePathText) +
+             "</a>" +
+             "</i>")
+          ]]></handler>
+          <handler name="onmouseup">
+            if (classroot.expandable) {
+              classroot.onselected.sendEvent()
+            }
+            else {
+              lz.Browser.loadURL(classroot.postRef.mapLink(classroot.linkPathText), 'other');
+            }
+          </handler>
+        </pageText>
+        <pageText selectable="true" name="external" visible="${classroot.expandable}">
+          <handler name="oninit"><![CDATA[
+            this.setAttribute('text', "<i><a target='other' href='"+ classroot.postRef.mapLink(classroot.linkPathText) + "'>" + '(View Externally)' + "</a></i>")
+          ]]></handler>
+        </pageText>
+      </view>
+      <text selectable="true" name="titleDate" visible="${classroot.showDate}">
+        <handler name="oninit"><![CDATA[
+          this.setAttribute('text', classroot.postRef.mapDate(classroot.datePathText))
+          this.setAttribute('fontsize', classroot.fontsize-2)
+        ]]></handler>
+      </text>
+    </view>
+
+    <view x="30" width="${parent.width*0.9}" height="${null}" name="description"> 
+      <state name="max" applied="${classroot.expanded}">
+        <handler name="onapplied"><![CDATA[
+          if (this.applied) {
+            parent.descriptionText.maxAnimate.setAttribute('to', classroot.staticHeight || parent.descriptionText.height)
+            parent.descriptionText.maxAnimate.setAttribute('started', true)
+          }
+        ]]></handler>
+        <pageText name="descriptionText" selectable="true" width="${parent.width}" height="${null}" multiline='true'>
+          <handler name="oninit"><![CDATA[
+            this.setAttribute('fontsize', classroot.fontsize-2)
+            this.setAttribute('text', classroot.descriptionPathText && classroot.postRef.mapDescription(classroot.descriptionPathText.replace('a href', 'a target=&quot;other&quot; href')))
+          ]]></handler>
+          <animator name='maxAnimate' duration="1000" attribute="height" from="0" relative="false" started="false"/>
+        </pageText>
+      </state>
+    </view>
+  </class>
+ </library>

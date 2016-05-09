@@ -1,0 +1,90 @@
+<library>
+ <include href="pageText.lzx"/>
+ <include href="roundrectbutton.lzx"/>
+ <class name="interest" defaultplacement="detail"  width="${null}" height="${null}"
+         >
+   <attribute type="string" name="topic"/>
+   <attribute name="spot"/>
+   <handler name="onmouseup">
+     detail.setAttribute('visible', !detail.visible)
+     detail.detailText.setAttribute('width', detail.width)
+     this.bringToFront()
+   </handler>
+   <method name="getSpot">
+     return new lz.spot(this, {x:this.x+this.width/2, y:this.y+this.height/2, radius:Math.sqrt(2*Math.pow([this.width,this.height].max()/2, 2))})
+   </method>
+   <handler name="onspot">
+     this.setAttribute('x', this.spot.x-this.width/2)
+     this.setAttribute('y', this.spot.y-this.height/2)
+   </handler>
+   <text align="center" valign="middle" textalign="center" x="${parent.width/2-this.width/2}" y="${parent.height/2-this.height/2}"
+         name="title" fontsize="14" text="${parent.topic}" multiline="true" bgcolor="#C0C0C0" cornerradius="20">
+     <handler name="oninit">
+      this.setAttribute('height',height+20)
+      this.setAttribute('width', width+20)
+     </handler>
+     <dragstate/>
+   </text>
+
+   <view name="detail" x="${parent.title.x}" y="${parent.title.y+parent.title.height}" bgcolor="white" width="500" height="${null}" cornerradius="5" visible="false"/>
+   <event name="moved"/>
+   <handler name="onx">
+     moved.sendEvent(this)
+     //bounceIfNeeded()
+   </handler>
+   <handler name="ony">
+     moved.sendEvent(this)
+     //bounceIfNeeded()
+   </handler>
+   <method name="bounceIfNeeded"><![CDATA[
+     if (x < 0 && adjust.adjustX.from > adjust.adjustX.to) {
+       adjust.adjustX.setAttribute('to', -adjust.adjustX.to)
+     } else if (this.x+x.width > classroot.parent.width && adjust.adjustX.from < adjust.adjustX.to) {
+       adjust.adjustX.setAttribute('to', adjust.adjustX.to-classroot.parent.width-this.width)
+     }
+     if (y < 0) {
+       adjust.adjustY.setAttribute('to', -adjust.adjustY.to && adjust.adjustY.from > adjust.adjustY.to)
+     } else if (this.y+detail.height > classroot.parent.height && adjust.adjustY.from < adjust.adjustY.to) {
+       adjust.adjustY.setAttribute('to', adjust.adjustY.to-classroot.parent.height-this.height)
+     }
+   ]]></method>
+   <handler name="onvisible" reference="detail"><![CDATA[
+    if (detail.visible) {
+        moveX = this.x+this.width>classroot.parent.width
+        adjust.adjustX.setAttribute('from', this.x)
+        adjust.adjustX.setAttribute('to', moveX ? classroot.parent.width-this.width : this.x)
+
+        moveY = this.y+this.height>classroot.parent.height
+        adjust.adjustY.setAttribute('from', this.y)
+        adjust.adjustY.setAttribute('to', moveY ? classroot.parent.height-this.height : this.y)
+        if (moveX || moveY) {
+          adjust.setAttribute('started', true)
+        }
+      }
+     ]]></handler>
+   <method name="getMovementVector">
+     x=parent.adjustX.started ? adjust.adjustX.to - adjust.adjustX.from : 0
+     y=parent.adjustX.started ? adjust.adjustY.to - adjust.adjustY.from : 0
+     return {x:x, y:y}
+   </method>
+   <method name="bump" args="intersectVector, movementVector">
+     if (!detail.visible) { // Don't move expanded views
+       adjust.adjustX.setAttribute('from', this.x)
+       adjust.adjustX.setAttribute('to', this.x+intersectVector.x/2)
+       adjust.adjustY.setAttribute('from', this.y)
+       adjust.adjustY.setAttribute('to', this.y+intersectVector.y/2)
+       adjust.setAttribute('started', true)
+     }
+   </method>
+   <animatorgroup name="adjust" started="false" process="simultaneous" relative="false">
+    <animator name="adjustX" attribute="x" relative="false" duration="1000" motion="easeout" />
+    <animator name="adjustY" attribute="y" relative="false" duration="1000" motion="easeout" />
+   </animatorgroup>
+ </class>
+ <class name="detailText" fontsize="14" width="${parent.width}" height="${null}" multiline="true" extends="text">
+   <attribute name="fixHeightFactor" value="1.155"/>
+   <handler name="ontext"> <!-- height is always too short by a little -->
+     this.setAttribute('height', this.height*this.fixHeightFactor)
+   </handler>
+ </class>
+</library>
